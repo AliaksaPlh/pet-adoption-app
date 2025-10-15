@@ -1,0 +1,85 @@
+{
+  "Home": {
+    "title": "Welcome!",
+    "description": "This is the homepage"
+  },
+  "Header": {
+    "logo": "Pet ♡ community",
+    "main": "Main",
+    "pets": "Pets",
+    "sign-up": "Sign Up",
+    "sign-in": "Sign In",
+    "sign-out": "Sign Out"
+  },
+  "SignUp": {
+    "title": "Sign Up",
+    "name": "Name",
+    "email": " E-mail address",
+    "password": "Password",
+    "passwordConfirm": "Confirm password",
+    "submitBtn": "Sign Up",
+    "linkWrapper": "Do you have an account? ",
+    "signInLink": "Sign In"
+  },
+  "SignIn": {
+    "title": "Sign In",
+    "email": " E-mail address",
+    "password": "Password",
+    "submitBtn": "Sign In",
+    "linkWrapper": "Do not have an account? ",
+    "registrationLink": "Sign Up",
+    "useEffectErrorMessage": "Please, try later or sign up - in case you are a new user."
+  },
+  "PetCard": {
+    "type": "Type",
+    "breed": "Breed",
+    "age": "Age",
+    "color": "Color",
+    "character": "Character",
+    "toilet": "Toilet",
+    "foundAt": "Found At",
+    "history": "History"
+  },
+
+  "Toasts": {},
+  "HomePage": {
+    "mainTitle": "Welcome to Our Community",
+    "mainText": "Your journey to finding a new furry friend starts here.",
+    "missionTitle": "Our Mission ",
+    "mission1": "Finding Every Pet a Forever Home",
+    "mission2": "Giving Homeless Pets a Second Chance",
+    "mission3": "Making Pet Adoption Easy and Accessible",
+    "mission4": "Building a Community that Cares for Animals",
+    "mission5": "Empowering People to Save Lives Through Adoption",
+    "unique": "Every Pet is One of a Kind, Unique and Deserves Love",
+    "aboutUsTitle": "About us",
+    "aboutUsText": "We are a community of pet lovers dedicated to finding homes for abandoned animals. Our platform connects potential adopters with shelters and fosters, making the process of adopting a new pet as smooth as possible.",
+    "aboutUsText2": "Our platform connects potential adopters with shelters and fosters, making the process of adopting a new pet as smooth as possible."
+  },
+  "404": {
+    "title": "404 | Not Found",
+    "description": "Could not find requested resource",
+    "button": "Return Home"
+  },
+  "Validation": {
+    "name": {
+      "required": "Name is required",
+      "regex": "Name should contain only letters, you can add your full name or short"
+    },
+    "email": {
+      "required": "Email is required",
+      "invalid": "Invalid email address"
+    },
+    "password": {
+      "min": "Password is required, at least 12 characters",
+      "lowercase": "Password should contain at least one lowercase",
+      "uppercase": "Password should contain at least one uppercase",
+      "digit": "Password should contain at least one digit",
+      "special": "Password should contain at least one special char"
+    },
+    "confirmPassword": {
+      "required": "Confirm your password",
+      "match": "Passwords must match"
+    }
+  }
+}
