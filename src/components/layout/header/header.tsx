@@ -57,7 +57,7 @@ export default function Header() {
           </ButtonLink>
           <ButtonLink
             className={styles.navLink}
-            variant={'secondary'}
+            variant={'primary'}
             href={ROUTES.PETS}
           >
             {t('pets')}
@@ -82,7 +82,11 @@ export default function Header() {
               >
                 {t('sign-in')}
               </ButtonLink>
-              <ButtonLink className={styles.navLink} href={ROUTES.SIGN_UP}>
+              <ButtonLink
+                className={styles.navLink}
+                variant={'secondary'}
+                href={ROUTES.SIGN_UP}
+              >
                 {t('sign-up')}
               </ButtonLink>
             </>
