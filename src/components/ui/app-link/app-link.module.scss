@@ -1,0 +1,13 @@
+﻿@use '@/styles/variables' as v;
+
+.link {
+  color: v.$color-orange;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      color: v.$color-pink;
+    }
+  }
+}
