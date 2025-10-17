@@ -1,0 +1,43 @@
+﻿@use '@/styles/variables' as v;
+@use '@/styles/mixins' as m;
+
+.wrapper {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+.mainTitle {
+  padding: 0 1.5rem;
+  border-radius: 10px;
+  background-color: v.$color-pink;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contentWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 1000px;
+
+  @include m.tablet-sm {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.content {
+  max-width: 800px;
+  @include m.tablet-sm {
+    text-align: center;
+  }
+}
+.title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
