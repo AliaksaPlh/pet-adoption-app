@@ -81,5 +81,11 @@
       "required": "Confirm your password",
       "match": "Passwords must match"
     }
+  },
+  "ErrorsWarnings": {
+    "noAuthToken": "Something went wrong, try again.",
+    "sessionExpired": "Your session has expired, please sign in again.",
+    "tokenCheckFailed": "Token check failed, please try again.",
+    "tokenValidationError": "Token validation error:"
   }
 }
