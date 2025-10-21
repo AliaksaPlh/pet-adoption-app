@@ -38,7 +38,8 @@
     "character": "Character",
     "toilet": "Toilet",
     "foundAt": "Found At",
-    "history": "History"
+    "history": "History",
+    "gender": "Gender"
   },
 
   "Toasts": {},

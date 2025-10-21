@@ -5,6 +5,7 @@ import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
 import Header from '@/components/layout/header/header';
 import { getMessages } from 'next-intl/server';
+import ToastProvider from '@/components/providers/toast-provider';
 
 export const metadata: Metadata = {
   title: 'Pet Shelter - Find Your New Best Friend',
@@ -35,6 +36,7 @@ export default async function RootLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           {children}
+          <ToastProvider />
         </NextIntlClientProvider>
       </body>
     </html>

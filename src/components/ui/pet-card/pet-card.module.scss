@@ -1,9 +1,17 @@
+@use '@/styles/variables' as v;
+
 .petCard {
-  border: 1px solid #ccc;
+  box-shadow: v.$box-shadow;
   border-radius: 8px;
+  background-color: v.$color-tint-orange1;
   padding: 16px;
   text-align: center;
   width: 150px;
   margin-bottom: 20px;
   list-style: none;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: v.$box-shadow-hover;
+  }
 }

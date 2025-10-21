@@ -1,9 +1,7 @@
 'use client';
-
 import { useState, useEffect } from 'react';
 import styles from './pets.module.scss';
 import Page from '@/components/layout/page/page';
-import Button from '@/components/ui/button/button';
 import Image from 'next/image';
 import PetList from '@/components/ui/pet-list/pet-list';
 

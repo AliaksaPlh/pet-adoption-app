@@ -38,7 +38,8 @@
     "character": "Характер",
     "toilet": "Выгул",
     "foundAt": "Найден",
-    "history": "История"
+    "history": "История",
+    "gender": "Пол"
   },
   "Toasts": {},
   "HomePage": {
