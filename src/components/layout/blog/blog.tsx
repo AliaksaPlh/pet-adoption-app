@@ -1,7 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import styles from './pets.module.scss';
+import styles from './blog.module.scss';
 import Page from '@/components/layout/page/page';
 
 export default function Blog() {

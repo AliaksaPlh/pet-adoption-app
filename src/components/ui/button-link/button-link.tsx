@@ -1,14 +1,7 @@
 ﻿import Link from 'next/link';
 import styles from './button-link.module.scss';
 import clsx from 'clsx';
-
-type ButtonLinkProps = {
-  href: string;
-  children: React.ReactNode;
-  className?: string;
-  variant?: 'primary' | 'secondary';
-  scaleOnHover?: boolean;
-};
+import { type ButtonLinkProps } from '@/types/types';
 
 export default function ButtonLink({
   href,

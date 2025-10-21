@@ -1,15 +1,6 @@
 ﻿import clsx from 'clsx';
 import styles from './button.module.scss';
-
-type ButtonProps = {
-  children: React.ReactNode;
-  className?: string;
-  variant?: 'primary' | 'secondary' | 'removeButton' | 'ghost';
-  type?: 'button' | 'submit';
-  onClick?: () => void;
-  disabled?: boolean;
-  isLoading?: boolean;
-};
+import { type ButtonProps } from '@/types/types';
 
 export default function Button({
   children,

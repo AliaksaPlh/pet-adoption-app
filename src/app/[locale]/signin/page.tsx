@@ -35,7 +35,7 @@ export default function SignInPage() {
     const success = await logInWithEmailAndPassword(data.email, data.password);
     if (success) router.push(ROUTES.HOME);
     if (error) toast.error(t('useEffectErrorMessage'));
-    router.push(ROUTES.HOME);
+    // router.push(ROUTES.HOME);
   };
 
   return (

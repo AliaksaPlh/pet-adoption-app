@@ -5,7 +5,7 @@ import { ROUTES } from '@/constants/routes';
 import { signUpSchema, type SignUpForm } from '@/utils/validation';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import styles from '../signin/signin.module.scss';
+import styles from '@/app/[locale]/signin/signin.module.scss';
 import { useTranslations } from 'next-intl';
 import AppLink from '@/components/ui/app-link/app-link';
 import Button from '@/components/ui/button/button';
@@ -38,7 +38,7 @@ export default function SignUpPage() {
   };
 
   return (
-    <Page>
+    <Page skipAuthGuard={true}>
       <div className={styles.content}>
         <form
           onSubmit={handleSubmit(onSubmit)}
