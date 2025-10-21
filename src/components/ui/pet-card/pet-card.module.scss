@@ -3,15 +3,31 @@
 .petCard {
   box-shadow: v.$box-shadow;
   border-radius: 8px;
-  background-color: v.$color-tint-orange1;
   padding: 16px;
   text-align: center;
-  width: 150px;
+  width: 250px;
   margin-bottom: 20px;
   list-style: none;
   transition: box-shadow 0.2s ease;
+  cursor: pointer;
 
   &:hover {
     box-shadow: v.$box-shadow-hover;
+    background-color: v.$color-silver;
   }
+}
+
+.petPhoto {
+  border-radius: 8px;
+  object-fit: cover;
+}
+.shortInfoBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.petName {
+  font-size: 1.2rem;
+  margin: 12px 0 0 0;
 }

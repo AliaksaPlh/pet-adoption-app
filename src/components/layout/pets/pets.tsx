@@ -6,11 +6,12 @@ import Image from 'next/image';
 import PetList from '@/components/ui/pet-list/pet-list';
 
 export default function Pets() {
-  const [lang, setLang] = useState<'en' | 'ru'>('en');
+  const [lang, setLang] = useState<'en' | 'ru'>('ru');
   return (
     <Page>
       <section className={styles.wrapper}>
-        <div className={styles.langSwitch}>
+        {/* // добавлю позже, когда будут данные на англ */}
+        {/* <div className={styles.langSwitch}>
           {[
             { code: 'en', flag: '/en.svg', label: 'English' },
             { code: 'ru', flag: '/ru.svg', label: 'Русский' },
@@ -28,7 +29,7 @@ export default function Pets() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
         <PetList language={lang} />
       </section>
     </Page>

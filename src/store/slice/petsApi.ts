@@ -7,7 +7,7 @@ export const petsApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: apiURL }),
   endpoints: (builder) => ({
     getPetsByPage: builder.query<PetsResponse, { page: number; lang: string }>({
-      query: ({ page, lang }) => `pets?page=${page}&limit=10&lang=${lang}`,
+      query: ({ page, lang }) => `pets?page=${page}&limit=9&lang=${lang}`,
     }),
   }),
 });
