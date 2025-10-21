@@ -9,7 +9,6 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { toast } from 'react-toastify';
 import { useTranslations } from 'next-intl';
 import AppLink from '@/components/ui/app-link/app-link';
-
 import { ROUTES } from '@/constants/routes';
 import Button from '@/components/ui/button/button';
 import { FieldInput } from '@/components/ui/field-input/field-input';
@@ -40,7 +39,7 @@ export default function SignInPage() {
   };
 
   return (
-    <Page>
+    <Page skipAuthGuard={true}>
       <div className={styles.content}>
         <form
           onSubmit={handleSubmit(handleSignIn)}
