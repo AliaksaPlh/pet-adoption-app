@@ -1,14 +1,20 @@
 export interface Pet {
   id: number;
   name: string;
+  gender?: string;
   photo: string;
   type: string;
   age?: string;
   color: string;
   character?: string;
   toilet?: string;
+  medicalNeeds?: string;
+  feeding?: string;
   foundAt?: string;
   history?: string;
+  shelter?: number;
+  contactPhone?: string;
+  linkToPlatform?: string;
 }
 
 export interface PetsByPage {
@@ -18,12 +24,18 @@ export interface PetsByPage {
   limit: number;
 }
 
-export interface PetCardProps {
+export type PetCardProps = {
   pet: Pet;
-}
+  onClick?: () => void;
+};
+export type PetCardDetailsProps = {
+  pet: Pet;
+  onClose?: () => void;
+};
 
 export type PetListProps = {
   language: 'en' | 'ru';
+  pets: Pet[];
 };
 
 export type PetsResponse = {
