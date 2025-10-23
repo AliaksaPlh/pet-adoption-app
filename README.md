@@ -45,7 +45,7 @@ It offers catalogs of pets available for adoption across various platforms, shel
 
 ### 🖼️ Screenshots
 
----
+## ![screen](image.png)
 
 # 👩‍💻 Aliaksandra Palkhouskaya
 
