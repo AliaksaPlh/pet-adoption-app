@@ -35,7 +35,7 @@ export type PetCardDetailsProps = {
 
 export type PetListProps = {
   language: 'en' | 'ru';
-  pets: Pet[];
+  pets?: Pet[];
 };
 
 export type PetsResponse = {
