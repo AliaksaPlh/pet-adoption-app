@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### Pet Adopting Platform
 
-## Getting Started
+**A modern web application that connects homeless pets with caring owners.**
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🌟 Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Pet Adopting Platform** is a responsive and multilingual web application built with **React, TypeScript, Next.js, RTK Query, Firebase**, and **SCSS Modules**.
+It offers catalogs of pets available for adoption across various platforms, shelters, and foster homes in Belarus, making the process of rescuing a pet quick and easy.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### ✨ Features
 
-## Learn More
+- 🐶 **Pet catalog** – view detailed profiles with photos, story, and adoption details.
+- 🌍 **Multilingual support (EN/RU)** – instant language switch for accessibility.
+- ⚡ **Pagination & caching** – powered by RTK Query for optimized data loading.
+- 🔐 **Firebase integration** – authentication and secure data management.
+- 🎨 **Responsive design** – clean, modern UI with SCSS Modules.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🚧 In Progress
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- 🔍 **Search & filtering** – browse by type or age.
+- 🧾 **Adoption requests** – submit and manage applications directly in the app.
+- 💾 **Favorites** – authenticated users can save favorite pets to their personal account.
+- 🐶 **Pet catalog** – new homeless pets appear every day.
+- Refining SCSS styling and UI animations.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🧰 Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Category               | Technologies                            |
+| ---------------------- | --------------------------------------- |
+| **Framework**          | Next.js (App Router), React, TypeScript |
+| **State Management**   | Redux Toolkit, RTK Query                |
+| **Backend / Auth**     | Firebase                                |
+| **Styling**            | SCSS Modules                            |
+| **Build & Deployment** | Next.js, Vercel                         |
+
+---
+
+### 🖼️ Screenshots
+
+---
+
+# 👩‍💻 Aliaksandra Palkhouskaya
+
+**Junior Frontend Developer (React / TypeScript)**
+📍 Remote | Minsk
+📧 sahvero@gmail.com
+🔗 [GitHub](https://www.linkedin.com/in/aliaksandra-palkhouskaya-626a20158/) | [LinkedIn](https://linkedin.com/in/yourprofile)
+
+## 🎯 Summary
+
+I’m a passionate frontend developer focused on building responsive, accessible, and user-friendly web applications. I specialize in **React, TypeScript, and modern web technologies**. I’ve developed several projects, including a REST Client, Pet Shelter, and Pokémon Explorer, and I continuously improve my skills through self-learning. Currently, I’m seeking an opportunity to grow in a team and contribute to meaningful products.
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:** React, TypeScript, JavaScript (ES6+), Redux Toolkit, RTK Query, Zustand, Next.js, Vite
+**Styling:** CSS Modules, SCSS, TailwindCSS
+**Testing:** React Testing Library, Jest, Vitest
+**Backend / Database:** Firebase, REST APIs
+**Tools:** Git, GitHub, VS Code, Postman, Figma
+
+---
+
+## 🚀 Projects
+
+### ⚡ REST Client Tool
+
+**Stack:** Next.js, TypeScript, Firebase, Zustand
+Custom REST client inspired by Postman.
+Implemented request history saving, API testing interface, and real-time Firebase data storage.
+🔗 GitHub: [https://github.com/makholodova/rest-client-app](#)
+
+---
+
+### 🎮 Pokémon Explorer
+
+**Stack:** React, TypeScript, RTK Query, Redux, Performance, Forms, Context API
+Application for exploring Pokémon data with pagination, error handling, and localStorage caching.
+Focus on clean UI and API efficiency.
+🔗 GitHub: [https://github.com/AliaksaPlh/my-react-project](#)
+
+---
+
+## 🎓 Education
+
+**Frontend Development with React & JavaScript**
+**The Rolling Scopes School - JS, React, Node JS Courses** 2024-2025
+BSEU Faculty Of Finance And Banking, Economy, 2016 - 2020
+
+---
+
+## 💬 Languages
+
+- **English** — B2
+- **Russian** — Native
+
+---
+
+## 💡 Soft Skills
+
+Teamwork • Responsibility • Communication • Attention to Detail • Problem Solving • Willingness to Learn • Self-disciplined
+
+---
+
+## 📁 References
