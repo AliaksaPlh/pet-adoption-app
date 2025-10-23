@@ -1,5 +1,5 @@
-import { Geist, Geist_Mono } from 'next/font/google';
-
+import { Geist, Geist_Mono, Inter, Playfair_Display } from 'next/font/google';
+// import { AuthUserProvider } from '@/context/authUserContext';
 import { ReduxProvider } from '@/store/ReduxProvider';
 
 const geistSans = Geist({
@@ -17,5 +17,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <ReduxProvider>{children}</ReduxProvider>;
+  return (
+    // <AuthUserProvider>{
+    <ReduxProvider>{children}</ReduxProvider>
+    // }</AuthUserProvider>;
+  );
 }
