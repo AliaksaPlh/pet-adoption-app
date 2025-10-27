@@ -28,8 +28,8 @@ const PetCardDetails: React.FC<PetCardDetailsProps> = ({ pet, onClose }) => {
         className={styles.petPhoto}
         src={pet.photo}
         alt={pet.name}
-        width={250}
-        height={200}
+        width={350}
+        height={300}
       />
       <h3 className={styles.petName}>{pet.name}</h3>
       <div className={styles.shortInfoBlock}>

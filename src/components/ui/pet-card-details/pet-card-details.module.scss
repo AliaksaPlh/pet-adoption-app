@@ -1,14 +1,11 @@
 @use '@/styles/variables' as v;
 
 .petCard {
-  // display: flex;
-  // flex-direction: column;
   box-shadow: v.$box-shadow;
   border-radius: 8px;
   padding: 16px;
   text-align: center;
-  width: 250px;
-  margin: 20px 0;
+  width: 350px;
   list-style: none;
   transition: box-shadow 0.2s ease;
   cursor: pointer;
