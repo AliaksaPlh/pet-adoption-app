@@ -1,0 +1,52 @@
+@use '@/styles/variables' as v;
+
+.petCard {
+  // display: flex;
+  // flex-direction: column;
+  box-shadow: v.$box-shadow;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  width: 250px;
+  margin: 20px 0;
+  list-style: none;
+  transition: box-shadow 0.2s ease;
+  cursor: pointer;
+  background-color: v.$color-tint-pink-bg;
+
+  &:hover {
+    box-shadow: v.$box-shadow-hover;
+    background-color: v.$color-silver;
+  }
+}
+.petPhoto {
+  border-radius: 8px;
+  object-fit: cover;
+}
+.petName {
+  margin: 12px 0;
+  font-size: 1.4rem;
+  color: v.$color-pink-dark;
+}
+.shortInfoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: flex-start;
+}
+.closeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 2.2rem;
+  width: 2.2rem;
+  background: v.$color-pink-dark;
+  transition: all 0.25s ease;
+}
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}

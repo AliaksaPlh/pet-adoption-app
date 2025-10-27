@@ -4,11 +4,11 @@ import { useTranslations } from 'next-intl';
 import styles from './pet-card.module.scss';
 import { type PetCardProps } from '@/types/types';
 
-const PetCard: React.FC<PetCardProps> = ({ pet }) => {
+const PetCard: React.FC<PetCardProps> = ({ pet, onClick }) => {
   const t = useTranslations('PetCard');
 
   return (
-    <li className={styles.petCard}>
+    <li className={styles.petCard} onClick={onClick}>
       <Image
         className={styles.petPhoto}
         src={pet.photo}
