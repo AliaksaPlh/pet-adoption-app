@@ -1,5 +1,6 @@
 ﻿// ===== Neutral =====
 $color-black: #263238;
+$color-dark-grey: #444;
 $color-grey: #717171;
 $color-l-grey: #89939e;
 $color-silver: #f5f7fa;
@@ -14,11 +15,14 @@ $color-pink: #f865b0;
 // ===== Color Shades =====
 $color-shade-orange1: #ff9900;
 $color-shade-pink1: #fc49a6;
+$color-pink-dark: #b5005d;
 
 // ===== Color Tints =====
 $color-tint-orange1: #f8ead5;
 $color-tint-orange2: #f0c077;
 $color-tint-gray: #e2e2e2;
+$color-tint-pink-bg: #fffafc;
+$color-tint-pink-bg2: #ffeef4;
 
 // ===== Action =====
 $color-warning: #2e7d31;
@@ -27,6 +31,8 @@ $color-success: #fbc02d;
 
 $box-shadow: 0 2px 10px rgb(0, 0, 0, 10%);
 $box-shadow-hover: 0 2px 10px rgb(0, 0, 0, 20%);
+$box-shadow-pink: 0 6px 15px rgba(255, 182, 193, 0.25);
+$box-shadow-pink-hover: 0 6px 15px rgba(255, 182, 193, 0.5);
 
 $laptop: 1300px;
 $tablet: 1160px;

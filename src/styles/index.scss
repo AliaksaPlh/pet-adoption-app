@@ -1,0 +1,25 @@
+﻿@use 'variables';
+@use 'mixins';
+
+@use '@/styles/variables' as v;
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  font-family: var(--font-nunito), sans-serif;
+  background-color: v.$color-tint-pink-bg;
+}
+
+body {
+  color: v.$color-black;
+  color: v.$color-dark-grey;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}

@@ -39,7 +39,7 @@ export default function SignUpPage() {
 
   return (
     <Page skipAuthGuard={true}>
-      <div className={styles.content}>
+      <div className={`${styles.content} ${styles.contentSighUp}`}>
         <form
           onSubmit={handleSubmit(onSubmit)}
           className={styles.formContainer}

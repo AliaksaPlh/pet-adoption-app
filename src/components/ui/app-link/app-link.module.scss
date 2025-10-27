@@ -2,12 +2,14 @@
 
 .link {
   color: v.$color-orange;
+  color: v.$color-pink-dark;
+  font-weight: 800;
   text-decoration: none;
   transition: color 0.2s ease;
 
   @media (hover: hover) and (pointer: fine) {
     &:hover {
-      color: v.$color-pink;
+      color: v.$color-orange;
     }
   }
 }

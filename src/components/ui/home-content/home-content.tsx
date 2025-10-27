@@ -9,28 +9,39 @@ export default function HomeContent() {
       <div className={styles.mainTitle}>
         <h1>{t('mainTitle')}</h1>
       </div>
+      {/*  */}
       <div className={styles.contentWrap}>
         <Image src="/pets2.svg" alt="Furry friends" width={307} height={320} />
         <div className={styles.content}>
-          <h2 className={styles.title}>{t('mainText')}</h2>
+          <div className={styles.secondaryTitle}>
+            <h2 className={styles.title}>{t('mainText')}</h2>
+          </div>
         </div>
       </div>
+      {/*  */}
       <div className={styles.contentWrap}>
         <div className={styles.content}>
-          <h2 className={styles.title}>{t('aboutUsTitle')}</h2>
-          <p className={styles.description}>{t('aboutUsText')}</p>
-          <p className={styles.description}>{t('aboutUsText2')}</p>
+          <div className={styles.secondaryTitle}>
+            <h2 className={styles.title}>{t('aboutUsTitle')}</h2>
+          </div>
+          <h3 className={`${styles.description} ${styles.shadow}`}>
+            {t('aboutUsText')}
+          </h3>
         </div>
-        {/* <Image src="/dog1.svg" alt="Furry friends" width={307} height={302} /> */}
       </div>
+      {/*  */}
       <div className={styles.contentWrap}>
         <div className={styles.content}>
-          <h2 className={styles.title}>{t('missionTitle')}</h2>
-          <h3 className={styles.description}>{t('mission1')}</h3>
-          <h3 className={styles.description}>{t('mission2')}</h3>
-          <h3 className={styles.description}>{t('mission3')}</h3>
-          <h3 className={styles.description}>{t('mission4')}</h3>
-          <h3 className={styles.description}>{t('mission5')}</h3>
+          <div className={styles.secondaryTitle}>
+            <h2 className={styles.title}>{t('missionTitle')}</h2>
+          </div>
+          <div className={styles.shadow}>
+            {[1, 2, 3, 4, 5].map((n) => (
+              <h3 key={n} className={styles.description}>
+                {t(`mission${n}`)}
+              </h3>
+            ))}
+          </div>
         </div>
         <Image
           src="/paws-heart.svg"
@@ -39,17 +50,16 @@ export default function HomeContent() {
           height={402}
         />
       </div>
-      <div className={styles.contentWrap}>
-        <div className={styles.content}>
-          <h2 className={styles.title}>{t('unique')}</h2>
-        </div>
-      </div>{' '}
-      <Image
-        src="/handUnique.svg"
-        alt="Furry friends"
-        width={500}
-        height={100}
-      />
+      {/*  */}
+      <div className={styles.uniqueBlock}>
+        <h2 className={styles.title}>{t('unique')}</h2>
+        <Image
+          src="/handUnique.svg"
+          alt="Furry friends"
+          width={500}
+          height={100}
+        />
+      </div>
     </section>
   );
 }

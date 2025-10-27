@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Milo",
-    "photo": "/images/pet3.png",
+    "photo": "https://egida.by/_dr/84/33494530.webp",
     "type": "kitten",
     "age": "5 months",
     "color": "black",

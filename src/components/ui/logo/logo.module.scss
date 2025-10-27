@@ -4,8 +4,9 @@
   padding: 5px;
   font-size: 1.5rem;
   font-weight: bold;
-  color: v.$color-black;
   transition: color 0.2s ease;
+  color: v.$color-pink-dark;
+
   &:hover {
     color: v.$color-shade-orange1;
   }

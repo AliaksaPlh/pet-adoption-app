@@ -10,6 +10,7 @@
   scale: 1;
   cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease, scale 0.2s ease;
+  font-weight: 600;
 
   &:disabled {
     cursor: not-allowed;
@@ -21,6 +22,7 @@
 .primary {
   background: v.$color-orange;
   color: v.$color-white;
+  color: v.$color-tint-pink-bg;
 
   @media (hover: hover) and (pointer: fine) {
     &:hover {
@@ -32,6 +34,7 @@
 .secondary {
   background: v.$color-pink;
   color: v.$color-white;
+  color: v.$color-tint-pink-bg;
 
   @media (hover: hover) and (pointer: fine) {
     &:hover {
@@ -42,6 +45,8 @@
 
 .ghost {
   color: v.$color-black;
+  color: v.$color-dark-grey;
+
   @media (hover: hover) and (pointer: fine) {
     &:hover {
       color: v.$color-shade-orange1;
