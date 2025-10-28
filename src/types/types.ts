@@ -38,6 +38,10 @@ export type PetListProps = {
   pets?: Pet[];
 };
 
+export type PetFiltersProps = {
+  onFilterChange: (type: string | undefined) => void;
+};
+
 export type PetsResponse = {
   pets: Pet[];
   total: number;

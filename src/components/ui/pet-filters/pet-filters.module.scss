@@ -1,0 +1,29 @@
+@use '@/styles/variables' as v;
+
+.selectWrapper {
+  position: absolute;
+  left: 2%;
+  width: 110px;
+  display: inline-block;
+  z-index: 1000;
+}
+
+.select {
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+  border-radius: 8px;
+  border: 2px solid v.$color-pink-dark;
+  box-shadow: v.$box-shadow-hover;
+  appearance: none;
+  background-color: v.$color-tint-pink-bg2;
+  font-family: inherit;
+  position: relative;
+  z-index: 1000;
+  outline: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    box-shadow: v.$box-shadow-pink-hover;
+  }
+}

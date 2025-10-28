@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import styles from './pet-card-details.module.scss';
 import { PetCardDetailsProps } from '@/types/types';
 import Button from '@/components/ui/button/button';
+import ButtonLink from '../button-link/button-link';
 
 const PetCardDetails: React.FC<PetCardDetailsProps> = ({ pet, onClose }) => {
   const t = useTranslations('PetCard');
@@ -11,6 +12,13 @@ const PetCardDetails: React.FC<PetCardDetailsProps> = ({ pet, onClose }) => {
   return (
     <div className={styles.petCard}>
       <div className={styles.buttons}>
+        <ButtonLink
+          className={styles.moreBtn}
+          variant={'secondary'}
+          href={`/${'ru'}/pet/${encodeURIComponent(pet.name)}`}
+        >
+          details
+        </ButtonLink>{' '}
         <Button
           onClick={onClose}
           className={`${styles.closeBtn} ${styles.primaty}`}

@@ -6,10 +6,20 @@ export const petsApi = createApi({
   reducerPath: 'petsApi',
   baseQuery: fetchBaseQuery({ baseUrl: apiURL }),
   endpoints: (builder) => ({
-    getPetsByPage: builder.query<PetsResponse, { page: number; lang: string }>({
-      query: ({ page, lang }) => `pets?page=${page}&limit=9&lang=${lang}`,
+    getPetsByPage: builder.query<
+      PetsResponse,
+      { page: number; lang: string; type?: string }
+    >({
+      query: ({ page, lang, type }) =>
+        `pets?page=${page}&limit=9&lang=${lang}${
+          type && type !== '' ? `&type=${type}` : ''
+        }`,
+    }),
+    getPetByName: builder.query<Pet, { name: string; lang: string }>({
+      query: ({ name, lang }) =>
+        `pets/${encodeURIComponent(name)}?lang=${lang}`,
     }),
   }),
 });
 
-export const { useGetPetsByPageQuery } = petsApi;
+export const { useGetPetsByPageQuery, useGetPetByNameQuery } = petsApi;

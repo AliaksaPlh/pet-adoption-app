@@ -19,7 +19,7 @@
     "passwordConfirm": "Confirm password",
     "submitBtn": "Sign Up",
     "linkWrapper": "Do you have an account? ",
-    "signInLink": "Sign In"
+    "signInLink": "Sign In 🐾"
   },
   "SignIn": {
     "title": "Sign In",
@@ -88,5 +88,11 @@
     "sessionExpired": "Your session has expired, please sign in again.",
     "tokenCheckFailed": "Token check failed, please try again.",
     "tokenValidationError": "Token validation error:"
+  },
+  "PetList": {
+    "fetchError": "Something went wrong while fetching pets, try later."
+  },
+  "PetFilters": {
+    "select": "Select 🐾"
   }
 }
