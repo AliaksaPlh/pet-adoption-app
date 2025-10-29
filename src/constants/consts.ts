@@ -1,0 +1,15 @@
+export const petFields = [
+  { key: 'type', label: 'Вид' },
+  { key: 'age', label: 'Возраст' },
+  { key: 'gender', label: 'Пол' },
+  { key: 'color', label: 'Окрас' },
+  { key: 'character', label: 'Характер' },
+  { key: 'toilet', label: 'Туалет' },
+  { key: 'feeding', label: 'Кормление' },
+  { key: 'foundAt', label: 'Дата нахождения' },
+  //   { key: 'history', label: 'История' },
+  { key: 'shelter', label: 'Приют/передержка' },
+  { key: 'contactPhone', label: 'Контакты' },
+  // { key: 'linkToPlatform', label: 'Источник', isLink: true },
+  { key: 'medicalNeeds', label: 'Примечания:' },
+];

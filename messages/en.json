@@ -39,7 +39,15 @@
     "toilet": "Toilet",
     "foundAt": "Found At",
     "history": "History",
-    "gender": "Gender"
+    "gender": "Gender",
+    "notFound": "Pet isn't found, try again later",
+    "link": "Source"
+  },
+  "PetList": {
+    "fetchError": "Something went wrong while fetching pets, try later."
+  },
+  "PetFilters": {
+    "select": "Select 🐾"
   },
 
   "Toasts": {},
@@ -88,11 +96,5 @@
     "sessionExpired": "Your session has expired, please sign in again.",
     "tokenCheckFailed": "Token check failed, please try again.",
     "tokenValidationError": "Token validation error:"
-  },
-  "PetList": {
-    "fetchError": "Something went wrong while fetching pets, try later."
-  },
-  "PetFilters": {
-    "select": "Select 🐾"
   }
 }

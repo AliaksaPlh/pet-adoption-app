@@ -7,6 +7,10 @@ import { useTranslations } from 'next-intl';
 import styles from './pet.module.scss';
 import CircleLoader from '@/components/ui/circle-loader/circle-loader';
 import { type Pet } from '@/types/types';
+import { petFields } from '@/constants/consts';
+import { toast } from 'react-toastify';
+
+import ButtonLink from '@/components/ui/button-link/button-link';
 
 export default function Pet() {
   const { name, locale } = useParams() as { name: string; locale: string };
@@ -21,20 +25,41 @@ export default function Pet() {
   });
 
   if (isLoading) return <CircleLoader />;
-  if (isError || !pet) return <p>{t('notFound')}</p>;
+  if (isError || !pet) return toast.error(t('notFound'));
 
   return (
-    <div className={styles.wrapper}>
-      <Image src={pet.photo} alt={pet.name} width={400} height={300} />
-      <h1>{pet.name}</h1>
-      <p>{pet.type}</p>
-      <p>{pet.age}</p>
-      <p>{pet.gender}</p>
-      <p>{pet.character}</p>
-      {pet.medicalNeeds && <p>{pet.medicalNeeds}</p>}
-      {pet.toilet && <p>{pet.toilet}</p>}
-      {pet.shelter && <p>{pet.shelter}</p>}
-      {pet.history && <p>{pet.history}</p>}
+    <div className={styles.petCard}>
+      <div className={styles.photoWrapper}>
+        <Image
+          src={pet.photo}
+          alt={pet.name}
+          width={400}
+          height={280}
+          className={styles.photo}
+        />
+        {pet.history && <p>{pet.history}</p>}
+      </div>
+      <div className={styles.details}>
+        <h1 className={styles.name}>{pet.name}</h1>
+        <div className={styles.infoGrid}>
+          {petFields.map(({ key, label }) => {
+            const value = pet[key as keyof Pet];
+            if (!value) return null;
+            return (
+              <div key={key} className={styles.infoItem}>
+                <span className={styles.label}>{label}:</span> {value}
+              </div>
+            );
+          })}
+        </div>
+        <ButtonLink
+          className={styles.btnlink}
+          variant={'secondary'}
+          href={pet.linkToPlatform as string}
+        >
+          {t('link')}
+        </ButtonLink>
+      </div>
     </div>
   );
 }
