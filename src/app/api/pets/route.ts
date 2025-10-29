@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
-import petsEn from '@/pets/pets.en.json';
-import petsRu from '@/pets/pets.ru.json';
-import type { Pet } from '@/types/types';
+import { PETS_EN } from '@/pets/pets.en';
+import { PETS_RU } from '@/pets/pets.ru';
 
 export async function GET(request: Request) {
   try {
@@ -10,7 +9,7 @@ export async function GET(request: Request) {
     const limit = parseInt(searchParams.get('limit') || '10');
     const language = searchParams.get('lang') || 'ru';
     const type = searchParams.get('type');
-    const allPets = language === 'ru' ? petsRu : petsEn;
+    const allPets = language === 'ru' ? PETS_RU : PETS_EN;
 
     const filteredPets = type
       ? allPets.filter((pet) => pet.type.toLowerCase() === type.toLowerCase())

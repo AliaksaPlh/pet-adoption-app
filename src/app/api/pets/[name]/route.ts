@@ -1,17 +1,19 @@
 import { NextResponse } from 'next/server';
-import petsEn from '@/pets/pets.en.json';
-import petsRu from '@/pets/pets.ru.json';
+import type { NextRequest } from 'next/server';
 import type { Pet } from '@/types/types';
+import { PETS_RU } from '@/pets/pets.ru';
+import { PETS_EN } from '@/pets/pets.en';
 
 export async function GET(
-  request: Request,
-  { params }: { params: { name: string } }
+  request: NextRequest,
+  context: { params: Promise<{ name: string }> }
 ) {
   const { searchParams } = new URL(request.url);
   const lang = searchParams.get('lang') || 'en';
-  const { name } = params;
+  const { name } = await context.params;
 
-  const petsData: Pet[] = lang === 'ru' ? petsRu : petsEn;
+  const petsData: Pet[] = lang === 'ru' ? PETS_RU : PETS_EN;
+  // const petsData: Pet[] = PETS_RU;
 
   const pet = petsData.find(
     (p) => p.name.toLowerCase() === decodeURIComponent(name).toLowerCase()

@@ -13,7 +13,7 @@ export interface Pet {
   feeding?: string;
   foundAt?: string;
   history?: string;
-  shelter?: number;
+  shelter?: string;
   contactPhone?: string;
   linkToPlatform?: string;
 }
