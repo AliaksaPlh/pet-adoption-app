@@ -1,3 +1,9 @@
+export type Language = 'ru' | 'en';
+export interface LanguageContextType {
+  language: Language;
+  setLanguage: (lang: Language) => void;
+}
+
 export interface Pet {
   id: number;
   name: string;

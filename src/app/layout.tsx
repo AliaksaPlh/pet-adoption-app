@@ -9,6 +9,6 @@ export default function RootLayout({
   return (
     // <AuthUserProvider>{
     <ReduxProvider>{children}</ReduxProvider>
-    // }</AuthUserProvider>;
+    // }</AuthUserProvider>
   );
 }
