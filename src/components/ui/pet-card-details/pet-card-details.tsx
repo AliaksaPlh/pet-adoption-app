@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import styles from './pet-card-details.module.scss';
 import { PetCardDetailsProps } from '@/types/types';
 import Button from '@/components/ui/button/button';
@@ -8,6 +8,7 @@ import ButtonLink from '../button-link/button-link';
 
 const PetCardDetails: React.FC<PetCardDetailsProps> = ({ pet, onClose }) => {
   const t = useTranslations('PetCard');
+  const locale = useLocale();
 
   return (
     <div className={styles.petCard}>
@@ -15,7 +16,7 @@ const PetCardDetails: React.FC<PetCardDetailsProps> = ({ pet, onClose }) => {
         <ButtonLink
           className={styles.moreBtn}
           variant={'secondary'}
-          href={`/${'ru'}/pet/${encodeURIComponent(pet.name)}`}
+          href={`/${locale}/pet/${encodeURIComponent(pet.name)}`}
         >
           details
         </ButtonLink>{' '}
