@@ -9,6 +9,7 @@ import CircleLoader from '@/components/ui/circle-loader/circle-loader';
 import { type Pet } from '@/types/types';
 import { petFields } from '@/constants/consts';
 import { toast } from 'react-toastify';
+import { useEffect } from 'react';
 
 import ButtonLink from '@/components/ui/button-link/button-link';
 
@@ -24,8 +25,19 @@ export default function Pet() {
     lang: locale,
   });
 
+  useEffect(() => {
+    if (isError) {
+      toast.error(t('notFound'));
+    }
+  }, [isError, t]);
+
   if (isLoading) return <CircleLoader />;
-  if (isError || !pet) return toast.error(t('notFound'));
+  if (isError || !pet)
+    return (
+      <div className={styles.petCard}>
+        <h1 className={styles.name}>{t('notFound')}</h1>
+      </div>
+    );
 
   return (
     <div className={styles.petCard}>
