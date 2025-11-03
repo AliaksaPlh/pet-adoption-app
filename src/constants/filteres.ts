@@ -1,9 +1,9 @@
 export const FILTERSEN = [
-  { label: 'All', value: '' },
-  { label: 'Cats', value: 'cat' },
-  { label: 'Dogs', value: 'dog' },
-  { label: 'Kittens', value: 'kitten' },
-  { label: 'Puppies', value: 'puppy' },
+  { label: '🐶🐱🦮🐈', value: '' },
+  { label: '🐈', value: 'cat' },
+  { label: '🦮', value: 'dog' },
+  { label: '🐱', value: 'kitten' },
+  { label: '🐶', value: 'puppy' },
 ];
 export const FILTERSRU = [
   { label: '🐶🐱🦮🐈', value: '' },

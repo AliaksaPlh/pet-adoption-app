@@ -41,7 +41,8 @@
     "history": "History",
     "gender": "Gender",
     "notFound": "Pet isn't found, try again later",
-    "link": "Source"
+    "link": "Source",
+    "details": "Details"
   },
   "PetList": {
     "fetchError": "Something went wrong while fetching pets, try later."
