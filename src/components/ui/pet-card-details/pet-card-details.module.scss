@@ -9,11 +9,11 @@
   list-style: none;
   transition: box-shadow 0.2s ease;
   cursor: pointer;
-  background-color: v.$color-tint-pink-bg;
+  background-color: var(--petCard-bg, v.$color-tint-pink-bg);
 
   &:hover {
     box-shadow: v.$box-shadow-hover;
-    background-color: v.$color-silver;
+    background-color: var(--petCard-bg, v.$color-silver);
   }
 }
 .petPhoto {

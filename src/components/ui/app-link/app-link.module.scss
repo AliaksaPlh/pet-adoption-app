@@ -1,8 +1,9 @@
 ﻿@use '@/styles/variables' as v;
 
 .link {
-  color: v.$color-orange;
+  // color: v.$color-orange;
   color: v.$color-pink-dark;
+  color: var(--app-link-primary-fg, v.$color-pink-dark);
   font-weight: 800;
   text-decoration: none;
   transition: color 0.2s ease;

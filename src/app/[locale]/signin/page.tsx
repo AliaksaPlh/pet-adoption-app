@@ -13,6 +13,7 @@ import { ROUTES } from '@/constants/routes';
 import Button from '@/components/ui/button/button';
 import { FieldInput } from '@/components/ui/field-input/field-input';
 import Page from '@/components/layout/page/page';
+import Image from 'next/image';
 
 export default function SignInPage() {
   const [error] = useAuthState(auth);

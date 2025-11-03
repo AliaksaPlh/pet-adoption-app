@@ -13,3 +13,6 @@ export const petFields = [
   // { key: 'linkToPlatform', label: 'Источник', isLink: true },
   { key: 'medicalNeeds', label: 'Примечания:' },
 ];
+
+export const LIGHT = 'light';
+export const DARK = 'dark';

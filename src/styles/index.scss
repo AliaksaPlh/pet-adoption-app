@@ -1,8 +1,12 @@
 ﻿@use 'variables';
 @use 'mixins';
-
 @use '@/styles/variables' as v;
 
+*,
+::before,
+::after {
+  // box-sizing: border-box;
+}
 * {
   margin: 0;
 }
@@ -13,13 +17,60 @@ body {
   max-width: 100%;
   height: 100%;
   font-family: var(--font-nunito), sans-serif;
-  background-color: v.$color-tint-pink-bg;
 }
 
 body {
-  color: v.$color-black;
   color: v.$color-dark-grey;
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
+}
+
+/* Theme classes on html element */
+.light {
+  /* Base */
+  --bg: #{v.$color-tint-pink-bg};
+  // --text: #{v.$color-dark-grey};
+
+  /* Header */
+  --header-bg: #{v.$color-tint-pink-bg};
+  --header-sticky-bg: #{v.$color-silver};
+  --header-wrapper-bg: #{v.$color-tint-gray};
+
+  /* App Link */
+  --app-link-primary-fg: #{v.$color-pink-dark};
+
+  /* Buttons */
+  --button-primary-fg: #{v.$color-tint-pink-bg};
+  --button-secondary-fg: #{v.$color-tint-pink-bg};
+  --button-ghost-fg: #{v.$color-dark-grey};
+
+  /* Pet Card */
+  --petCard-bg: #{v.$color-tint-pink-bg};
+
+  background-color: var(--bg);
+}
+
+.dark {
+  /* Base */
+  --bg: #{v.$color-gray};
+  // --text: #{v.$color-white};
+
+  /* Header */
+  --header-bg: #{v.$color-grey};
+  --header-sticky-bg: #{v.$color-grey};
+  --header-wrapper-bg: #{v.$color-dark-grey};
+
+  /* App Link */
+  --app-link-primary-fg: #{v.$color-orange};
+
+  /* Buttons */
+  --button-primary-fg: #{v.$color-dark-grey};
+  --button-secondary-fg: #{v.$color-dark-grey};
+  --button-ghost-fg: #{v.$color-white};
+
+  /* Pet Card */
+  --petCard-bg: #{v.$color-tint-orange2};
+
+  background-color: var(--bg);
 }

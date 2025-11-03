@@ -8,6 +8,7 @@ import { getMessages } from 'next-intl/server';
 import ToastProvider from '@/components/providers/toast-provider';
 import { Nunito, Merriweather } from 'next/font/google';
 import { LanguageProvider } from '@/context/languageContext';
+import { ThemeProvider } from '@/context/Themecontext';
 import { type Language } from '@/types/types';
 
 const nunito = Nunito({
@@ -54,9 +55,11 @@ export default async function RootLayout({
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <LanguageProvider initialLanguage={locale as Language}>
-            <Header />
-            {children}
-            <ToastProvider />
+            <ThemeProvider>
+              <Header />
+              {children}
+              <ToastProvider />
+            </ThemeProvider>
           </LanguageProvider>
         </NextIntlClientProvider>
       </body>

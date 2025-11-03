@@ -3,15 +3,4 @@
 .logo {
   padding: 5px;
   font-size: 1.5rem;
-  font-weight: bold;
-  transition: color 0.2s ease;
-  color: v.$color-pink-dark;
-
-  &:hover {
-    color: v.$color-shade-orange1;
-  }
-}
-
-.logoIcon {
-  margin-right: 0.5rem;
 }

@@ -13,6 +13,7 @@ import clsx from 'clsx';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import type { User } from 'firebase/auth';
+import ThemeButton from '@/components/ui/theme/theme';
 
 export default function Header() {
   const isScrolled = useIsScrolled();
@@ -49,7 +50,10 @@ export default function Header() {
   return (
     <header className={clsx(styles.header, { [styles.sticky]: isScrolled })}>
       <div className={`${styles.headerWrapper} container`}>
-        <Logo />
+        <div className={styles.logo}>
+          <ThemeButton />
+          <Logo />
+        </div>
         <div className={styles.nav}>
           <LanguageSwitcher />
           <ButtonLink className={styles.navLink} href={ROUTES.HOME}>

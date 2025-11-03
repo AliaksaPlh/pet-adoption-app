@@ -24,12 +24,13 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 1rem;
   box-shadow: v.$box-shadow;
   min-width: 390px;
   max-width: 450px;
   background-color: v.$color-tint-gray;
   transition: box-shadow 0.2s ease;
+  box-shadow: v.$box-shadow;
 
   &:hover {
     box-shadow: v.$box-shadow-hover;
@@ -45,6 +46,8 @@
   align-self: flex-start;
   font-size: 14px;
   min-height: 16px;
+  padding: 0;
+  margin: 0;
 }
 
 .linkWrapper {

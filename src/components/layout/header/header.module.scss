@@ -7,13 +7,13 @@
   left: 0;
   z-index: 1000;
   box-shadow: v.$box-shadow;
-  background: v.$color-tint-pink-bg;
+  background: var(--header-bg, v.$color-tint-pink-bg);
   backdrop-filter: none;
   will-change: contents;
   transition: background-color 0.2s ease;
 }
 .sticky {
-  background-color: v.$color-silver;
+  background-color: var(--header-sticky-bg, v.$color-silver);
 }
 .sticky .headerWrapper {
   padding: 10px 15px;
@@ -25,10 +25,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 15px;
-  background: v.$color-tint-gray;
+  background: var(--header-wrapper-bg, v.$color-tint-gray);
   border-radius: 10px;
   transition: padding 0.2s ease;
-  color: #cdedfd;
+  // color: var(--header-text);
 
   @include m.phone {
     flex-direction: column;
@@ -38,7 +38,11 @@
   display: flex;
   gap: 1rem;
 }
-
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 .navLink {
   font-size: 18px;
   line-height: 111%;

@@ -5,10 +5,11 @@
   height: 60px;
   border-width: 8px;
   border-style: solid;
-  border-color: v.$color-tint-orange1;
-  border-top-color: v.$color-tint-orange2;
+  border-color: v.$color-tint-pink-bg2;
+  border-top-color: v.$color-pink-dark;
   border-radius: 50%;
   margin: auto;
+  margin-top: 20%;
   animation: spin 1s linear infinite;
 }
 

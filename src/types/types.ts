@@ -96,3 +96,9 @@ export type ButtonLinkProps = {
   variant?: 'primary' | 'secondary';
   scaleOnHover?: boolean;
 };
+
+export interface Theme {
+  theme: 'light' | 'dark';
+  toggleTheme?: () => void;
+  setTheme?: () => void;
+}

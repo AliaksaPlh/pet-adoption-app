@@ -18,7 +18,7 @@ const PetCardDetails: React.FC<PetCardDetailsProps> = ({ pet, onClose }) => {
           variant={'secondary'}
           href={`/${locale}/pet/${encodeURIComponent(pet.name)}`}
         >
-          details
+          {t('details')}
         </ButtonLink>{' '}
         <Button
           onClick={onClose}
