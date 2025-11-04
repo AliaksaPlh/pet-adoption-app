@@ -1,5 +1,6 @@
 ﻿@use 'variables';
 @use 'mixins';
+
 @use '@/styles/variables' as v;
 
 *,
@@ -48,14 +49,19 @@ body {
   /* Pet Card */
   --petCard-bg: #{v.$color-tint-pink-bg};
 
+  /* Home */
+  --home-text-color-fg: #{v.$color-dark-grey};
+
   background-color: var(--bg);
 }
 
 .dark {
   /* Base */
   --bg: #{v.$color-gray};
-  // --text: #{v.$color-white};
+  --box-shadow: #{v.$box-shadow};
+  --box-shadow-hover: #{v.$box-shadow-hover};
 
+  // --text: #{v.$color-white};
   /* Header */
   --header-bg: #{v.$color-grey};
   --header-sticky-bg: #{v.$color-grey};
@@ -68,9 +74,13 @@ body {
   --button-primary-fg: #{v.$color-dark-grey};
   --button-secondary-fg: #{v.$color-dark-grey};
   --button-ghost-fg: #{v.$color-white};
+  --labguage-btn-bg: #{v.$color-orange};
 
   /* Pet Card */
   --petCard-bg: #{v.$color-tint-orange2};
+
+  /* Home */
+  --home-content-orange-color: #{v.$color-tint-orange2};
 
   background-color: var(--bg);
 }

@@ -14,7 +14,7 @@
   background-color: var(--petCard-bg, v.$color-tint-pink-bg);
 
   &:hover {
-    box-shadow: v.$box-shadow-pink-hover;
+    box-shadow: var(--box-shadow-hover, v.$box-shadow-pink-hover);
     transform: translateY(-6px);
   }
 }

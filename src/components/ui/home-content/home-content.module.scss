@@ -14,20 +14,21 @@
   padding: 1.5rem 2.5rem;
   border-radius: 4rem;
   background-color: v.$color-pink;
+  background-color: var(--home-content-orange-color, v.$color-pink);
   text-align: center;
   align-items: center;
   color: v.$color-tint-pink-bg;
-  box-shadow: v.$box-shadow-pink;
+  box-shadow: var(--box-shadow, v.$box-shadow-pink);
 }
 .secondaryTitle {
   padding: 0.75rem 1.5rem;
   border-radius: 3rem;
-  background-color: v.$color-pink;
+  background-color: var(--home-content-orange-color, v.$color-pink);
   color: v.$color-tint-pink-bg;
   text-align: center;
   display: inline-block;
   align-self: flex-start;
-  box-shadow: v.$box-shadow-pink;
+  box-shadow: var(--box-shadow, v.$box-shadow-pink);
 
   @include m.tablet-sm {
     align-self: center;
@@ -40,7 +41,8 @@
 .description {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: v.$color-dark-grey;
+  color: var(--home-content-orange-color, v.$color-dark-grey);
+
   font-weight: 600;
 
   &:not(:last-child) {
@@ -77,15 +79,16 @@
 
 .uniqueBlock {
   text-align: center;
-  // background-color: v.$color-tint-pink-bg2;
+  background-color: var(--uniqueBlock-bg, inherit);
+  // background-color: inherit;
   padding: 3rem 2rem 2rem;
   border-radius: 7rem;
   max-width: 900px;
-  box-shadow: v.$box-shadow-pink;
+  box-shadow: var(--box-shadow, v.$box-shadow-pink);
 
   h2 {
     font-size: 1.8rem;
-    color: v.$color-pink-dark;
+    color: var(--home-content-orange-color, v.$color-pink-dark);
     font-weight: 800;
   }
 
@@ -95,7 +98,7 @@
 }
 
 .shadow {
-  box-shadow: v.$box-shadow-pink;
+  box-shadow: var(--box-shadow, v.$box-shadow-pink);
   padding: 2rem;
   border-radius: 1rem;
   border-radius: 4rem;
