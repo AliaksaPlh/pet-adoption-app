@@ -1,6 +1,8 @@
 'use client';
 import React, { useState } from 'react';
 import { useGetPetsByPageQuery } from '@/store/slice/petsApi';
+import { useDispatch } from 'react-redux';
+import { toggleFavorite } from '@/store/slice/favoritesSlice';
 import { type PetListProps, Pet } from '@/types/types';
 import PetCard from '@/components/ui/pet-card/pet-card';
 import PetCardDetails from '@/components/ui/pet-card-details/pet-card-details';
@@ -14,6 +16,7 @@ const PetList: React.FC<PetListProps> = ({ language }) => {
   const [page, setPage] = useState(1);
   const [selectedPet, setSelectedPet] = useState<Pet | null>(null);
   const [filterType, setFilterType] = useState<string | undefined>();
+  const dispatch = useDispatch();
 
   console.log('Active filter:', filterType);
 
@@ -30,6 +33,10 @@ const PetList: React.FC<PetListProps> = ({ language }) => {
   const handleFilterChange = (type: string | undefined) => {
     setPage(1);
     setFilterType(type);
+  };
+
+  const handleFavorite = (pet: Pet) => {
+    dispatch(toggleFavorite(pet));
   };
 
   return (
@@ -59,6 +66,7 @@ const PetList: React.FC<PetListProps> = ({ language }) => {
             <PetCardDetails
               pet={selectedPet}
               onClose={() => setSelectedPet(null)}
+              onfavorite={() => handleFavorite(selectedPet)}
             />
           </div>
         </div>

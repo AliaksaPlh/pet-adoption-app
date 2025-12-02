@@ -5,8 +5,13 @@ import styles from './pet-card-details.module.scss';
 import { PetCardDetailsProps } from '@/types/types';
 import Button from '@/components/ui/button/button';
 import ButtonLink from '../button-link/button-link';
+import FavoriteButton from '../button-fav/favorite-button';
 
-const PetCardDetails: React.FC<PetCardDetailsProps> = ({ pet, onClose }) => {
+const PetCardDetails: React.FC<PetCardDetailsProps> = ({
+  pet,
+  onClose,
+  onfavorite,
+}) => {
   const t = useTranslations('PetCard');
   const locale = useLocale();
 
@@ -20,12 +25,7 @@ const PetCardDetails: React.FC<PetCardDetailsProps> = ({ pet, onClose }) => {
         >
           {t('details')}
         </ButtonLink>{' '}
-        <Button
-          onClick={onClose}
-          className={`${styles.closeBtn} ${styles.primaty}`}
-        >
-          ♡
-        </Button>
+        <FavoriteButton pet={pet} onFavorite={onfavorite} />
         <Button
           onClick={onClose}
           className={`${styles.closeBtn} ${styles.primaty}`}

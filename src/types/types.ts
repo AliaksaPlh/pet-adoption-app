@@ -38,6 +38,7 @@ export type PetCardProps = {
 export type PetCardDetailsProps = {
   pet: Pet;
   onClose?: () => void;
+  onfavorite?: () => void;
 };
 
 export type PetListProps = {

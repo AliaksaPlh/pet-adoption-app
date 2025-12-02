@@ -3,4 +3,5 @@
   SIGN_IN: '/signin',
   SIGN_UP: '/signup',
   PETS: '/pets',
+  FAVORITES: '/favorites',
 };

@@ -7,6 +7,7 @@
     "logo": "Pet ♡ community",
     "main": "Main",
     "pets": "Pets",
+    "favorites": "Favorites",
     "sign-up": "Sign Up",
     "sign-in": "Sign In",
     "sign-out": "Sign Out"
@@ -49,6 +50,9 @@
   },
   "PetFilters": {
     "select": "Select 🐾"
+  },
+  "Favorites": {
+    "empty": "No favorite pets yet. Add some pets to your favorites!"
   },
 
   "Toasts": {},

@@ -1,0 +1,9 @@
+@use '@/styles/variables' as v;
+@use '../pet-list/pet-list.module.scss' as *;
+
+.emptyState {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: v.$color-pink-dark;
+}

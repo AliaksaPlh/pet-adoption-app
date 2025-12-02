@@ -14,11 +14,17 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import type { User } from 'firebase/auth';
 import ThemeButton from '@/components/ui/theme/theme';
+import { useSelector } from 'react-redux';
+import { RootState } from '@/store/store';
 
 export default function Header() {
   const isScrolled = useIsScrolled();
   const t = useTranslations('Header');
   const router = useRouter();
+  const favorites = useSelector(
+    (state: RootState) => state.favorites.favorites
+  );
+  const hasFavorites = favorites.length > 0;
 
   const [user, setUser] = useState<User | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -66,6 +72,15 @@ export default function Header() {
           >
             {t('pets')}
           </ButtonLink>
+          {hasFavorites && (
+            <ButtonLink
+              className={styles.navLink}
+              variant={'secondary'}
+              href={ROUTES.FAVORITES}
+            >
+              🤍
+            </ButtonLink>
+          )}
 
           {user ? (
             <>
