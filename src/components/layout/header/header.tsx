@@ -78,7 +78,7 @@ export default function Header() {
               variant={'secondary'}
               href={ROUTES.FAVORITES}
             >
-              🤍
+              💛
             </ButtonLink>
           )}
 
@@ -101,13 +101,13 @@ export default function Header() {
               >
                 {t('sign-in')}
               </ButtonLink>
-              <ButtonLink
+              {/* <ButtonLink
                 className={styles.navLink}
                 variant={'secondary'}
                 href={ROUTES.SIGN_UP}
               >
                 {t('sign-up')}
-              </ButtonLink>
+              </ButtonLink> */}
             </>
           )}
         </div>

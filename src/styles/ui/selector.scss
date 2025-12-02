@@ -4,10 +4,10 @@
   width: 100%;
   padding: 0.5rem 0.5rem 0.5rem 0.75rem;
   border-radius: 8px;
-  border: 2px solid v.$color-pink-dark;
+  border: 2px solid v.$color-main-green;
   box-shadow: v.$box-shadow-hover;
   appearance: none;
-  background-color: v.$color-tint-pink-bg2;
+  background-color: v.$color-main-green-l;
   font-family: inherit;
   position: relative;
   z-index: 1000;
@@ -17,7 +17,7 @@
   &:hover,
   &:active,
   &:focus {
-    box-shadow: v.$box-shadow-pink-hover;
+    box-shadow: v.$box-shadow-green-hover;
   }
   &:disabled {
     box-shadow: none;

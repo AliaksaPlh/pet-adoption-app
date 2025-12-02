@@ -1,39 +1,26 @@
 ﻿// ===== Neutral =====
-$color-black: #263238;
 $color-dark-grey: #444;
-$color-grey: #717171;
-$color-l-grey: #89939e;
-$color-silver: #f5f7fa;
+$color-silver: #f6f6f6;
 $color-white: #ffffff;
 
 // ===== Primary =====
-$color-info: #2194f3;
-$color-orange: #f18f01;
+$color-info: #9ae9ff;
+$color-yellow: #fbd268;
 $color-gray: #969696;
-$color-pink: #f865b0;
-
-// ===== Color Shades =====
-$color-shade-orange1: #ff9900;
-$color-shade-pink1: #fc49a6;
-$color-pink-dark: #b5005d;
+$color-main-green: #a0c451;
+$color-main-green-l: #ecf5d8;
+$color-main-grey: #6a6a6a;
 
 // ===== Color Tints =====
-$color-tint-orange1: #f8ead5;
-$color-tint-orange2: #f0c077;
 $color-tint-gray: #e2e2e2;
-$color-tint-pink-bg: #fffafc;
-$color-tint-pink-bg2: #ffeef4;
-$color-tint-pink-bg3: #ffa6c5;
 
 // ===== Action =====
-$color-warning: #2e7d31;
 $color-error: #e53835;
-$color-success: #fbc02d;
 
 $box-shadow: 0 2px 10px rgb(0, 0, 0, 10%);
 $box-shadow-hover: 0 2px 10px rgb(0, 0, 0, 20%);
-$box-shadow-pink: 0 6px 15px rgba(255, 182, 193, 0.25);
-$box-shadow-pink-hover: 0 6px 15px rgba(255, 182, 193, 0.5);
+$box-shadow-greenl: 0 6px 15px rgb(236, 245, 216);
+$box-shadow-green-hover: 0 6px 15px rgba(160, 196, 81, 0.5);
 
 $laptop: 1300px;
 $tablet: 1160px;

@@ -30,24 +30,24 @@ body {
 /* Theme classes on html element */
 .light {
   /* Base */
-  --bg: #{v.$color-tint-pink-bg};
+  --bg: #{v.$color-white};
   // --text: #{v.$color-dark-grey};
 
   /* Header */
-  --header-bg: #{v.$color-tint-pink-bg};
+  --header-bg: #{v.$color-white};
   --header-sticky-bg: #{v.$color-silver};
-  --header-wrapper-bg: #{v.$color-tint-gray};
+  --header-wrapper-bg: #{v.$color-white};
 
   /* App Link */
-  --app-link-primary-fg: #{v.$color-pink-dark};
+  --app-link-primary-fg: #{v.$color-main-green};
 
   /* Buttons */
-  --button-primary-fg: #{v.$color-tint-pink-bg};
-  --button-secondary-fg: #{v.$color-tint-pink-bg};
+  --button-primary-fg: #{v.$color-white};
+  --button-secondary-fg: #{v.$color-white};
   --button-ghost-fg: #{v.$color-dark-grey};
 
   /* Pet Card */
-  --petCard-bg: #{v.$color-tint-pink-bg};
+  --petCard-bg: #{v.$color-white};
 
   /* Home */
   --home-text-color-fg: #{v.$color-dark-grey};
@@ -57,30 +57,29 @@ body {
 
 .dark {
   /* Base */
-  --bg: #{v.$color-gray};
+  --bg: #{v.$color-silver};
   --box-shadow: #{v.$box-shadow};
   --box-shadow-hover: #{v.$box-shadow-hover};
 
-  // --text: #{v.$color-white};
   /* Header */
-  --header-bg: #{v.$color-grey};
-  --header-sticky-bg: #{v.$color-grey};
-  --header-wrapper-bg: #{v.$color-dark-grey};
+  --header-bg: #{v.$color-silver};
+  --header-sticky-bg: #{v.$color-silver};
+  --header-wrapper-bg: #{v.$color-silver};
 
   /* App Link */
-  --app-link-primary-fg: #{v.$color-orange};
+  // --app-link-primary-fg: #{v.$color-yellow};
 
   /* Buttons */
   --button-primary-fg: #{v.$color-dark-grey};
   --button-secondary-fg: #{v.$color-dark-grey};
   --button-ghost-fg: #{v.$color-white};
-  --labguage-btn-bg: #{v.$color-orange};
+  --labguage-btn-bg: #{v.$color-silver};
 
   /* Pet Card */
-  --petCard-bg: #{v.$color-tint-orange2};
+  --petCard-bg: #{v.$color-main-green-l};
 
   /* Home */
-  --home-content-orange-color: #{v.$color-tint-orange2};
+  --home-content-green-light-color: #{v.$color-main-green-l};
 
   background-color: var(--bg);
 }

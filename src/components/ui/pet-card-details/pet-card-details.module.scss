@@ -9,7 +9,7 @@
   list-style: none;
   transition: box-shadow 0.2s ease;
   cursor: pointer;
-  background-color: var(--petCard-bg, v.$color-tint-pink-bg);
+  background-color: var(--petCard-bg, v.$color-white);
 
   &:hover {
     box-shadow: v.$box-shadow-hover;
@@ -23,7 +23,7 @@
 .petName {
   margin: 12px 0;
   font-size: 1.4rem;
-  color: v.$color-pink-dark;
+  color: v.$color-main-green;
 }
 .shortInfoBlock {
   display: flex;
@@ -39,7 +39,7 @@
   border-radius: 50%;
   height: 2.2rem;
   width: 2.2rem;
-  background: v.$color-pink;
+  background: v.$color-main-green;
   transition: all 0.25s ease;
 }
 .buttons {

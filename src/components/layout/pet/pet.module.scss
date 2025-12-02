@@ -6,16 +6,16 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  background-color: var(--petCard-bg, v.$color-tint-pink-bg);
+  background-color: var(--petCard-bg, v.$color-white);
   padding: 1.5rem;
   border-radius: 1.5rem;
-  box-shadow: v.$box-shadow-pink;
+  box-shadow: v.$box-shadow-greenl;
   img {
     border-radius: 1.5rem;
   }
 
   h1 {
-    color: v.$color-pink-dark;
+    color: v.$color-main-green;
     font-size: 2rem;
   }
 }

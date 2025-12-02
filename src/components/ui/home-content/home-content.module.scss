@@ -13,22 +13,23 @@
 .mainTitle {
   padding: 1.5rem 2.5rem;
   border-radius: 4rem;
-  background-color: v.$color-pink;
-  background-color: var(--home-content-orange-color, v.$color-pink);
+  // background-color: v.$color-main-green;
+  // background-color: var(--home-content-orange-color, v.$color-main-green);
   text-align: center;
   align-items: center;
-  color: v.$color-tint-pink-bg;
-  box-shadow: var(--box-shadow, v.$box-shadow-pink);
+  color: v.$color-white;
+  color: v.$color-main-green;
+  box-shadow: var(--box-shadow, v.$box-shadow-greenl);
 }
 .secondaryTitle {
   padding: 0.75rem 1.5rem;
   border-radius: 3rem;
-  background-color: var(--home-content-orange-color, v.$color-pink);
-  color: v.$color-tint-pink-bg;
+  background-color: var(--home-content-orange-color, v.$color-main-green);
+  color: v.$color-white;
   text-align: center;
   display: inline-block;
   align-self: flex-start;
-  box-shadow: var(--box-shadow, v.$box-shadow-pink);
+  box-shadow: var(--box-shadow, v.$box-shadow-greenl);
 
   @include m.tablet-sm {
     align-self: center;
@@ -84,11 +85,11 @@
   padding: 3rem 2rem 2rem;
   border-radius: 7rem;
   max-width: 900px;
-  box-shadow: var(--box-shadow, v.$box-shadow-pink);
+  box-shadow: var(--box-shadow, v.$box-shadow-greenl);
 
   h2 {
     font-size: 1.8rem;
-    color: var(--home-content-orange-color, v.$color-pink-dark);
+    color: var(--home-content-orange-color, v.$color-main-green);
     font-weight: 800;
   }
 
@@ -98,9 +99,9 @@
 }
 
 .shadow {
-  box-shadow: var(--box-shadow, v.$box-shadow-pink);
+  box-shadow: var(--box-shadow, v.$box-shadow-greenl);
   padding: 2rem;
   border-radius: 1rem;
   border-radius: 4rem;
-  // background-color: v.$color-tint-pink-bg2;
+  // background-color: v.$color-main-green-l;
 }

@@ -11,17 +11,17 @@
   transition: all 0.25s ease;
   cursor: pointer;
   overflow: hidden;
-  background-color: var(--petCard-bg, v.$color-tint-pink-bg);
+  background-color: var(--petCard-bg, v.$color-white);
 
   &:hover {
-    box-shadow: var(--box-shadow-hover, v.$box-shadow-pink-hover);
+    box-shadow: var(--box-shadow-hover, v.$box-shadow-green-hover);
     transform: translateY(-6px);
   }
 }
 
 .petPhoto {
   object-fit: cover;
-  border-bottom: 1px solid v.$color-pink-dark;
+  border-bottom: 1px solid v.$color-main-green;
   border-radius: 1rem 1rem 0 0;
 }
 .shortInfoBlock {
@@ -36,9 +36,9 @@
 .petName {
   font-size: 1.3rem;
   margin: 0.8rem 0;
-  color: v.$color-pink-dark;
+  color: v.$color-main-green;
   font-weight: 700;
-  color: v.$color-pink-dark;
+  color: v.$color-main-green;
 }
 
 .petCard:hover::after {

@@ -9,7 +9,7 @@
     border-color 0.2s ease,
     box-shadow 0.2s ease,
     background-color 0.2s ease;
-  background-color: v.$color-tint-pink-bg;
+  background-color: v.$color-white;
   color: v.$color-dark-grey;
   box-shadow: v.$box-shadow;
 
@@ -20,7 +20,7 @@
   }
   &:focus {
     box-shadow: v.$box-shadow-hover;
-    border-color: v.$color-shade-orange1;
+    border-color: v.$color-yellow;
     outline: none;
   }
 
