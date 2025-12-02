@@ -22,7 +22,7 @@ const FavoriteButton: React.FC<FavoriteButtonProps> = ({ pet, onFavorite }) => {
       onClick={onFavorite}
       className={`${styles.favBtn} ${styles.primaty}`}
     >
-      {isFavorite ? '♥️' : '🤍'}
+      {isFavorite ? '🤍' : '🩶'}
     </Button>
   );
 };

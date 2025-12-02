@@ -52,7 +52,8 @@
     "select": "Select 🐾"
   },
   "Favorites": {
-    "empty": "No favorite pets yet. Add some pets to your favorites!"
+    "empty": "No favorite pets yet. Add some pets to your favorites!",
+    "petsLinkText": "Go to pets!"
   },
 
   "Toasts": {},

@@ -8,6 +8,10 @@ import PetCard from '@/components/ui/pet-card/pet-card';
 import PetCardDetails from '@/components/ui/pet-card-details/pet-card-details';
 import styles from './favorites-list.module.scss';
 import { useTranslations } from 'next-intl';
+import { useRouter } from 'next/navigation';
+import { ROUTES } from '@/constants/routes';
+import ButtonLink from '@/components/ui/button-link/button-link';
+import Link from 'next/link';
 
 const FavoritesList: React.FC = () => {
   const [selectedPet, setSelectedPet] = useState<Pet | null>(null);
@@ -16,6 +20,7 @@ const FavoritesList: React.FC = () => {
     (state: RootState) => state.favorites.favorites
   );
   const t = useTranslations('Favorites');
+  const router = useRouter();
 
   const handleFavorite = (pet: Pet) => {
     dispatch(toggleFavorite(pet));
@@ -25,6 +30,13 @@ const FavoritesList: React.FC = () => {
     return (
       <div className={styles.emptyState}>
         <p>{t('empty')}</p>
+        <Link
+          href={ROUTES.PETS}
+          className={styles.link}
+          style={{ fontWeight: '600' }}
+        >
+          {t('petsLinkText')}
+        </Link>
       </div>
     );
   }
