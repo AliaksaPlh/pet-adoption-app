@@ -83,7 +83,7 @@ export type PageProps = {
 export type ButtonProps = {
   children: React.ReactNode;
   className?: string;
-  variant?: 'primary' | 'secondary' | 'removeButton' | 'ghost';
+  variant?: 'primary' | 'secondary' | 'removeButton';
   type?: 'button' | 'submit';
   onClick?: () => void;
   disabled?: boolean;

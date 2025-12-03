@@ -17,6 +17,12 @@ const PetCardDetails: React.FC<PetCardDetailsProps> = ({
 
   return (
     <div className={styles.petCard}>
+      <Button
+        onClick={onClose}
+        className={`${styles.closeBtn} ${styles.primaty}`}
+      >
+        ✘
+      </Button>
       <div className={styles.buttons}>
         <ButtonLink
           className={styles.moreBtn}
@@ -26,12 +32,6 @@ const PetCardDetails: React.FC<PetCardDetailsProps> = ({
           {t('details')}
         </ButtonLink>{' '}
         <FavoriteButton pet={pet} onFavorite={onfavorite} />
-        <Button
-          onClick={onClose}
-          className={`${styles.closeBtn} ${styles.primaty}`}
-        >
-          ✘
-        </Button>
       </div>
       <Image
         className={styles.petPhoto}

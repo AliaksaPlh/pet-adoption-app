@@ -20,7 +20,8 @@
 
 .modalContent {
   margin: auto;
-  overflow-y: auto;
+  overflow: visible;
+  padding: 1.1rem;
 
   p {
     text-align: start;

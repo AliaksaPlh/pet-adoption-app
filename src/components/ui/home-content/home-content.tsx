@@ -11,7 +11,15 @@ export default function HomeContent() {
       </div>
       {/*  */}
       <div className={styles.contentWrap}>
-        <Image src="/pets2.svg" alt="Furry friends" width={307} height={320} />
+        {/* <Image src="/pets2.svg" alt="Furry friends" width={307} height={320} /> */}
+
+        <Image
+          src="/cat-girl.png"
+          alt="Furry friends"
+          width={222}
+          height={320}
+        />
+
         <div className={styles.content}>
           <div className={styles.secondaryTitle}>
             <h2 className={styles.title}>{t('mainText')}</h2>
@@ -43,14 +51,8 @@ export default function HomeContent() {
             ))}
           </div>
         </div>
-        <Image
-          src="/paws-heart.svg"
-          alt="Furry friends"
-          width={407}
-          height={402}
-        />
+        <Image src="/pets3.svg" alt="Furry friends" width={407} height={402} />
       </div>
-      {/*  */}
       <div className={styles.uniqueBlock}>
         <h2 className={styles.title}>{t('unique')}</h2>
         <Image

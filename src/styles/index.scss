@@ -42,9 +42,12 @@ body {
   --app-link-primary-fg: #{v.$color-main-green};
 
   /* Buttons */
-  --button-primary-fg: #{v.$color-white};
-  --button-secondary-fg: #{v.$color-white};
-  --button-ghost-fg: #{v.$color-dark-grey};
+  --button-primary-fg: #{v.$color-main-green};
+  --button-secondary-fg: #{v.$color-main-green};
+  --button-bg: #{v.$color-white};
+
+  /* Input */
+  --input-bg: #{v.$color-white};
 
   /* Pet Card */
   --petCard-bg: #{v.$color-white};
@@ -70,10 +73,12 @@ body {
   // --app-link-primary-fg: #{v.$color-yellow};
 
   /* Buttons */
-  --button-primary-fg: #{v.$color-dark-grey};
-  --button-secondary-fg: #{v.$color-dark-grey};
-  --button-ghost-fg: #{v.$color-white};
+  --button-fg: #{v.$color-dark-grey};
   --labguage-btn-bg: #{v.$color-silver};
+  --button-bg: #{v.$color-silver};
+
+  /* Input */
+  --input-bg: #{v.$color-silver};
 
   /* Pet Card */
   --petCard-bg: #{v.$color-main-green-l};
