@@ -8,7 +8,7 @@ const PetCard: React.FC<PetCardProps> = ({ pet, onClick }) => {
   const t = useTranslations('PetCard');
 
   return (
-    <li className={styles.petCard} onClick={onClick}>
+    <div className={styles.petCard} onClick={onClick}>
       <Image
         className={styles.petPhoto}
         src={pet.photo}
@@ -22,7 +22,7 @@ const PetCard: React.FC<PetCardProps> = ({ pet, onClick }) => {
         <p>{pet.age}</p>
         <p>{pet.gender}</p>
       </div>
-    </li>
+    </div>
   );
 };
 export default PetCard;

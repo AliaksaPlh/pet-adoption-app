@@ -40,10 +40,7 @@ const FavoritesList: React.FC = () => {
 
   return (
     <div>
-      <ul
-        className={styles.petList}
-        style={{ listStyle: 'none', padding: 0, margin: 0 }}
-      >
+      <ul className={styles.petList}>
         {favorites.map((pet) => (
           <li key={pet.id} className={styles.petCardWrapper}>
             <PetCard pet={pet} onClick={() => setSelectedPet(pet)} />

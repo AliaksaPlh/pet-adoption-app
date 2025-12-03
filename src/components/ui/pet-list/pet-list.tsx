@@ -44,7 +44,9 @@ const PetList: React.FC<PetListProps> = ({ language }) => {
       <PetFilters onFilterChange={handleFilterChange} />
       <ul className={styles.petList}>
         {data?.pets.map((pet) => (
-          <PetCard key={pet.id} pet={pet} onClick={() => setSelectedPet(pet)} />
+          <li key={pet.id}>
+            <PetCard pet={pet} onClick={() => setSelectedPet(pet)} />
+          </li>
         ))}
       </ul>
       {data && (
