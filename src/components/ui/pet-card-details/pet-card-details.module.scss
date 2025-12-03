@@ -44,8 +44,16 @@
   height: 2.2rem;
   width: 2.2rem;
   background: v.$color-main-green;
+  background-color: v.$color-white;
   transition: all 0.25s ease;
   z-index: 10;
+  // padding: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background: v.$color-main-green-l;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
 }
 
 .favBtn {

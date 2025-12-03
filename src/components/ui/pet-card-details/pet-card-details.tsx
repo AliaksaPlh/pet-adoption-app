@@ -21,7 +21,7 @@ const PetCardDetails: React.FC<PetCardDetailsProps> = ({
         onClick={onClose}
         className={`${styles.closeBtn} ${styles.primaty}`}
       >
-        ✘
+        ✕
       </Button>
       <div className={styles.buttons}>
         <ButtonLink

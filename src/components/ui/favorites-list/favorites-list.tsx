@@ -6,12 +6,12 @@ import { toggleFavorite } from '@/store/slice/favoritesSlice';
 import { Pet } from '@/types/types';
 import PetCard from '@/components/ui/pet-card/pet-card';
 import PetCardDetails from '@/components/ui/pet-card-details/pet-card-details';
+import RemoveFavoriteButton from '@/components/ui/button-fav/remove-favorite-button';
 import styles from './favorites-list.module.scss';
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/navigation';
 import { ROUTES } from '@/constants/routes';
 import ButtonLink from '@/components/ui/button-link/button-link';
-import Link from 'next/link';
 
 const FavoritesList: React.FC = () => {
   const [selectedPet, setSelectedPet] = useState<Pet | null>(null);
@@ -30,13 +30,10 @@ const FavoritesList: React.FC = () => {
     return (
       <div className={styles.emptyState}>
         <p>{t('empty')}</p>
-        <Link
-          href={ROUTES.PETS}
-          className={styles.link}
-          style={{ fontWeight: '600' }}
-        >
+        <br />
+        <ButtonLink href={ROUTES.PETS} className={styles.link}>
           {t('petsLinkText')}
-        </Link>
+        </ButtonLink>
       </div>
     );
   }
@@ -48,7 +45,10 @@ const FavoritesList: React.FC = () => {
         style={{ listStyle: 'none', padding: 0, margin: 0 }}
       >
         {favorites.map((pet) => (
-          <PetCard key={pet.id} pet={pet} onClick={() => setSelectedPet(pet)} />
+          <li key={pet.id} className={styles.petCardWrapper}>
+            <PetCard pet={pet} onClick={() => setSelectedPet(pet)} />
+            <RemoveFavoriteButton pet={pet} className={styles.removeBtn} />
+          </li>
         ))}
       </ul>
       {selectedPet && (
