@@ -47,7 +47,15 @@ It offers catalogs of pets available for adoption across various platforms, shel
 
 ### 🖼️ Screenshots
 
-## ![screen](image.png)
+## ![alt text](image.png)
+
+## ![alt text](image-1.png)
+
+## ![alt text](image-2.png)
+
+## ![alt text](image-3.png)
+
+##![alt text](image-4.png)
 
 https://pet-adoption-app-eta.vercel.app/en
 
