@@ -1,9 +1,10 @@
 'use client';
 import React, { useState } from 'react';
+import { useLocale } from 'next-intl';
 import { useGetPetsByPageQuery } from '@/store/slice/petsApi';
 import { useDispatch } from 'react-redux';
 import { toggleFavorite } from '@/store/slice/favoritesSlice';
-import { type PetListProps, Pet } from '@/types/types';
+import { Pet } from '@/types/types';
 import PetCard from '@/components/ui/pet-card/pet-card';
 import PetCardDetails from '@/components/ui/pet-card-details/pet-card-details';
 import PetFilters from '@/components/ui/pet-filters/pet-filters';
@@ -12,7 +13,8 @@ import { toast } from 'react-toastify';
 import CircleLoader from '@/components/ui/circle-loader/circle-loader';
 import Pagination from '@/components/ui/pagination/pagination';
 
-const PetList: React.FC<PetListProps> = ({ language }) => {
+const PetList: React.FC = () => {
+  const locale = useLocale();
   const [page, setPage] = useState(1);
   const [selectedPet, setSelectedPet] = useState<Pet | null>(null);
   const [filterType, setFilterType] = useState<string | undefined>();
@@ -22,7 +24,7 @@ const PetList: React.FC<PetListProps> = ({ language }) => {
 
   const { data, isLoading, isError } = useGetPetsByPageQuery({
     page,
-    lang: language,
+    lang: locale,
     type: filterType || '',
   });
 
