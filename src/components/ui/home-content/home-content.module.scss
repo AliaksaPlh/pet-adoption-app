@@ -13,8 +13,6 @@
 .mainTitle {
   padding: 1.5rem 2.5rem;
   border-radius: 4rem;
-  // background-color: v.$color-main-green;
-  // background-color: var(--home-content-orange-color, v.$color-main-green);
   text-align: center;
   align-items: center;
   color: v.$color-white;
@@ -43,11 +41,16 @@
   font-size: 1.1rem;
   line-height: 1.6;
   color: var(--home-content-orange-color, v.$color-dark-grey);
-
   font-weight: 600;
+  transition: all 0.2s ease;
 
   &:not(:last-child) {
     margin-bottom: 0.5rem;
+  }
+  &:hover {
+    color: v.$color-main-green;
+    opacity: 1;
+    transform: translateX(4px);
   }
 }
 .contentWrap {
@@ -81,11 +84,16 @@
 .uniqueBlock {
   text-align: center;
   background-color: var(--uniqueBlock-bg, inherit);
-  // background-color: inherit;
   padding: 3rem 2rem 2rem;
   border-radius: 7rem;
   max-width: 900px;
   box-shadow: var(--box-shadow, v.$box-shadow-greenl);
+  @include m.phone {
+    border: none;
+    border-radius: v.$borderRadius4;
+    box-shadow: none;
+    padding: 3rem 2rem 2rem;
+  }
 
   h2 {
     font-size: 1.8rem;
@@ -95,6 +103,9 @@
 
   img {
     margin-top: 1.5rem;
+    @include m.phone {
+      display: none;
+    }
   }
 }
 

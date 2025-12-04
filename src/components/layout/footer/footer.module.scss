@@ -1,0 +1,80 @@
+@use '@/styles/variables' as v;
+@use '@/styles/mixins' as m;
+
+.footer {
+  margin-top: auto;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  background: var(--header-bg, v.$color-white);
+  padding: 1.5rem 1rem 1rem;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+  // margin: auto;
+  // max-width: v.$maxContentWidth;
+
+  @include m.phone {
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
+.logoSection {
+  @include m.phone {
+    min-width: 200px;
+    max-width: 300px;
+  }
+}
+
+.description {
+  margin-top: 0.5rem;
+  color: v.$color-dark-grey;
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+.linksSection {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+
+  @include m.phone {
+    gap: 2rem;
+    width: 100%;
+  }
+}
+
+.linksColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 100px;
+}
+
+.linksTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: v.$color-main-green;
+  margin-bottom: 0.25rem;
+}
+
+.footerLink {
+  font-size: 0.9rem;
+  color: v.$color-dark-grey;
+  transition: all 0.2s ease;
+  opacity: 0.8;
+  padding: 0.15rem 0;
+
+  &:hover {
+    color: v.$color-main-green;
+    opacity: 1;
+    transform: translateX(4px);
+  }
+}

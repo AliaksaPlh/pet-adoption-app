@@ -9,6 +9,7 @@ export default function ButtonLink({
   className,
   variant = 'primary',
   scaleOnHover = false,
+  style,
 }: ButtonLinkProps) {
   return (
     <Link
@@ -19,6 +20,7 @@ export default function ButtonLink({
         scaleOnHover && styles.scaleOnHover,
         className
       )}
+      style={style}
     >
       {children}
     </Link>

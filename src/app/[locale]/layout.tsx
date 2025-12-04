@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
 import Header from '@/components/layout/header/header';
+import Footer from '@/components/layout/footer/footer';
 import { getMessages } from 'next-intl/server';
 import ToastProvider from '@/components/providers/toast-provider';
 import { LanguageProvider } from '@/context/languageContext';
@@ -41,6 +42,7 @@ export default async function RootLayout({
           <ThemeProvider>
             <Header />
             {children}
+            <Footer />
             <ToastProvider />
           </ThemeProvider>
         </LanguageProvider>

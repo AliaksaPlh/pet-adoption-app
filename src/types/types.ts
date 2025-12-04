@@ -96,6 +96,7 @@ export type ButtonLinkProps = {
   className?: string;
   variant?: 'primary' | 'secondary';
   scaleOnHover?: boolean;
+  style?: React.CSSProperties;
 };
 
 export interface Theme {

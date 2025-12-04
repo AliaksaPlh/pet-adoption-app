@@ -44,7 +44,7 @@ export default function Header() {
 
   if (isLoading) {
     <header className={clsx(styles.header, { [styles.sticky]: isScrolled })}>
-      <div className={`${styles.headerWrapper} container`}>
+      <div className={styles.headerWrapper}>
         <Logo />
         <div className={styles.nav}>
           <LanguageSwitcher />
@@ -55,12 +55,27 @@ export default function Header() {
 
   return (
     <header className={clsx(styles.header, { [styles.sticky]: isScrolled })}>
-      <div className={`${styles.headerWrapper} container`}>
+      <div className={styles.headerWrapper}>
         <div className={styles.logo}>
           <ThemeButton />
           <Logo />
         </div>
         <div className={styles.nav}>
+          {hasFavorites && (
+            <ButtonLink
+              className={styles.navLink}
+              variant={'secondary'}
+              href={ROUTES.FAVORITES}
+              style={{
+                border: 'none',
+                display: 'flex',
+                alignItems: 'center',
+                boxShadow: '0 2px 10px rgb(0, 0, 0, 10%)',
+              }}
+            >
+              💛
+            </ButtonLink>
+          )}
           <LanguageSwitcher />
           <ButtonLink className={styles.navLink} href={ROUTES.HOME}>
             {t('main')}
@@ -72,15 +87,6 @@ export default function Header() {
           >
             {t('pets')}
           </ButtonLink>
-          {hasFavorites && (
-            <ButtonLink
-              className={styles.navLink}
-              variant={'secondary'}
-              href={ROUTES.FAVORITES}
-            >
-              💛
-            </ButtonLink>
-          )}
 
           {user ? (
             <>

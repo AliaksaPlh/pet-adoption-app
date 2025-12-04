@@ -12,6 +12,14 @@
     "sign-in": "Sign In",
     "sign-out": "Sign Out"
   },
+  "Footer": {
+    "description": "Your journey to finding a new furry friend starts here.",
+    "navigation": "Navigation",
+    "account": "Account",
+    "main": "Main",
+    "pets": "Pets",
+    "sign-in": "Sign In"
+  },
   "SignUp": {
     "title": "Sign Up",
     "name": "Name",

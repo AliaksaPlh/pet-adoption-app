@@ -24,6 +24,7 @@ const PetCardDetails: React.FC<PetCardDetailsProps> = ({
         ✕
       </Button>
       <div className={styles.buttons}>
+        <FavoriteButton pet={pet} onFavorite={onfavorite} />
         <ButtonLink
           className={styles.moreBtn}
           variant={'secondary'}
@@ -31,7 +32,6 @@ const PetCardDetails: React.FC<PetCardDetailsProps> = ({
         >
           {t('details')}
         </ButtonLink>{' '}
-        <FavoriteButton pet={pet} onFavorite={onfavorite} />
       </div>
       <Image
         className={styles.petPhoto}
