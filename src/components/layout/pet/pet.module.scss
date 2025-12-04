@@ -8,10 +8,10 @@
   gap: 2rem;
   background-color: var(--petCard-bg, v.$color-white);
   padding: 1.5rem;
-  border-radius: 1.5rem;
+  border-radius: v.$borderRadius4;
   box-shadow: v.$box-shadow-greenl;
   img {
-    border-radius: 1.5rem;
+    border-radius: v.$borderRadius4;
   }
 
   h1 {
@@ -30,7 +30,7 @@
 
 .photo {
   width: 100%;
-  border-radius: 12px;
+  border-radius: v.$borderRadius4;
   object-fit: cover;
   box-shadow: v.$box-shadow;
 }

@@ -11,7 +11,7 @@ export const petsApi = createApi({
       { page: number; lang: string; type?: string }
     >({
       query: ({ page, lang, type }) =>
-        `pets?page=${page}&limit=9&lang=${lang}${
+        `pets?page=${page}&limit=12&lang=${lang}${
           type && type !== '' ? `&type=${type}` : ''
         }`,
     }),

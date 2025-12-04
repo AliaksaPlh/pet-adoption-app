@@ -4,7 +4,7 @@
   width: 100%;
   padding: 12px 14px;
   border: 1px solid v.$color-silver;
-  border-radius: 0.8rem;
+  border-radius: v.$borderRadiusInput;
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease,

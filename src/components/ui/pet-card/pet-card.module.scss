@@ -2,7 +2,7 @@
 
 .petCard {
   box-shadow: v.$box-shadow;
-  border-radius: 1rem;
+  border-radius: v.$borderRadius3;
   padding: 1rem;
   text-align: center;
   width: 250px;

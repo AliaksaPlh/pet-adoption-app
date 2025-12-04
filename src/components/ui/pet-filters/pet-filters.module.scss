@@ -1,9 +1,9 @@
 @use '@/styles/variables' as v;
 
 .selectWrapper {
-  position: absolute;
+  position: fixed;
   left: 2%;
-  max-width: 110px;
+  max-width: fit-content;
   display: inline-block;
   z-index: 1000;
 }

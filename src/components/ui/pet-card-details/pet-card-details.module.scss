@@ -3,7 +3,7 @@
 .petCard {
   position: relative;
   box-shadow: v.$box-shadow;
-  border-radius: 8px;
+  border-radius: v.$borderRadius2;
   padding: 16px;
   text-align: center;
   width: 350px;
@@ -19,7 +19,7 @@
   }
 }
 .petPhoto {
-  border-radius: 8px;
+  border-radius: v.$borderRadius2;
   object-fit: cover;
 }
 .petName {
@@ -40,7 +40,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: v.$borderRadiusRound;
   height: 2.2rem;
   width: 2.2rem;
   background: v.$color-main-green;
@@ -60,7 +60,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: v.$borderRadiusRound;
   height: 2.2rem;
   width: 2.2rem;
   background: v.$color-main-green;

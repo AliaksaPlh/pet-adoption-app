@@ -42,7 +42,7 @@ const PetList: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className={styles.petListContainer}>
       <PetFilters onFilterChange={handleFilterChange} />
       <ul className={styles.petList}>
         {data?.pets.map((pet) => (

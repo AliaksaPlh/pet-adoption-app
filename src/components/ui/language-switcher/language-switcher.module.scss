@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: v.$borderRadiusRound;
 
   width: 20px;
   height: 20px;
@@ -39,7 +39,7 @@
   position: relative;
   width: 48px;
   height: 36px;
-  border-radius: 50%;
+  border-radius: v.$borderRadiusRound;
 }
 .image {
   object-fit: cover;

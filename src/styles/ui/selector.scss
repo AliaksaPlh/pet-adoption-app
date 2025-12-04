@@ -3,11 +3,12 @@
 .select {
   width: 100%;
   padding: 0.5rem 0.5rem 0.5rem 0.75rem;
-  border-radius: 8px;
+  border-radius: v.$borderRadius2;
   border: 2px solid v.$color-main-green;
+  border: none;
   box-shadow: v.$box-shadow-hover;
   appearance: none;
-  background-color: v.$color-main-green-l;
+  // background-color: v.$color-main-green-l;
   font-family: inherit;
   position: relative;
   z-index: 1000;

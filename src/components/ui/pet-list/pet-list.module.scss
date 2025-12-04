@@ -1,5 +1,10 @@
 @use '@/styles/variables' as v;
 
+.petListContainer {
+  max-width: v.$maxContentWidth;
+  margin: 3rem auto;
+  padding: 0 1rem 2rem 1rem;
+}
 .petList {
   display: flex;
   flex-wrap: wrap;

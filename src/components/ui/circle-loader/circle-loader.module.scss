@@ -7,7 +7,7 @@
   border-style: solid;
   border-color: v.$color-main-green-l;
   border-top-color: v.$color-main-green;
-  border-radius: 50%;
+  border-radius: v.$borderRadiusRound;
   margin: auto;
   margin-top: 20%;
   animation: spin 1s linear infinite;
