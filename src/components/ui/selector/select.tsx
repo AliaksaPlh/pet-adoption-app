@@ -1,21 +1,7 @@
 'use client';
 
-import React from 'react';
 import styles from './selector.module.scss';
-
-export interface Option {
-  label: string;
-  value: string;
-}
-
-interface SelectProps {
-  id?: string;
-  options: Option[];
-  defaultValue?: string;
-  onChange: (value: string | undefined) => void;
-  placeholder?: string;
-  className?: string;
-}
+import { SelectProps } from '@/types/types';
 
 export const Select: React.FC<SelectProps> = ({
   id,

@@ -35,3 +35,42 @@ export const signInSchema = (tV: (key: string) => string) =>
     password: true,
   });
 export type SignInForm = z.infer<ReturnType<typeof signInSchema>>;
+
+export const adoptionFormSchema = (tV: (key: string) => string) =>
+  z.object({
+    petName: z.string().min(1, { message: tV('petName.required') }),
+    petGender: z.string().min(1, { message: tV('petGender.required') }),
+    petType: z.string().min(1, { message: tV('petType.required') }),
+    applicantName: z
+      .string()
+      .min(1, { message: tV('name.required') })
+      .regex(/^[A-Za-zА-Яа-яЁё\s.'-]+$/, { message: tV('name.regex') }),
+    phone: z
+      .string()
+      .min(1, { message: tV('phone.required') })
+      .regex(/^[\d\s\-\+\(\)]+$/, { message: tV('phone.invalid') }),
+  });
+
+export type AdoptionForm = z.infer<ReturnType<typeof adoptionFormSchema>>;
+
+export const petOfferFormSchema = (tV: (key: string) => string) =>
+  z.object({
+    petType: z.string().min(1, { message: tV('petType.required') }),
+    petGender: z.string().min(1, { message: tV('petGender.required') }),
+    petAge: z.string().min(1, { message: tV('petAge.required') }),
+    petColor: z.string().min(1, { message: tV('petColor.required') }),
+    furType: z.string().min(1, { message: tV('furType.required') }),
+    medicalNeeds: z.string().optional(),
+    foundAt: z.string().min(1, { message: tV('foundAt.required') }),
+    notes: z.string().optional(),
+    applicantName: z
+      .string()
+      .min(1, { message: tV('name.required') })
+      .regex(/^[A-Za-zА-Яа-яЁё\s.'-]+$/, { message: tV('name.regex') }),
+    phone: z
+      .string()
+      .min(1, { message: tV('phone.required') })
+      .regex(/^[\d\s\-\+\(\)]+$/, { message: tV('phone.invalid') }),
+  });
+
+export type PetOfferForm = z.infer<ReturnType<typeof petOfferFormSchema>>;

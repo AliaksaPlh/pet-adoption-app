@@ -10,6 +10,7 @@ export default function Button({
   onClick,
   disabled,
   isLoading,
+  style,
 }: ButtonProps) {
   return (
     <button
@@ -17,6 +18,7 @@ export default function Button({
       onClick={onClick}
       disabled={disabled}
       className={clsx(styles.button, styles[variant], className)}
+      style={style}
     >
       {isLoading ? <span className={styles.spinner} /> : children}
     </button>

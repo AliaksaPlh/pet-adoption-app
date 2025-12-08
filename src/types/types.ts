@@ -88,6 +88,7 @@ export type ButtonProps = {
   onClick?: () => void;
   disabled?: boolean;
   isLoading?: boolean;
+  style?: React.CSSProperties;
 };
 
 export type ButtonLinkProps = {
@@ -99,8 +100,32 @@ export type ButtonLinkProps = {
   style?: React.CSSProperties;
 };
 
+export interface AdoptionFormProps {
+  onClose?: () => void;
+}
+
+export interface PetOfferFormProps {
+  onClose?: () => void;
+}
+
 export interface Theme {
   theme: 'light' | 'dark';
   toggleTheme?: () => void;
   setTheme?: () => void;
+}
+
+// Select //
+
+export interface SelectOption {
+  label: string;
+  value: string;
+}
+
+export interface SelectProps {
+  id?: string;
+  options: SelectOption[];
+  defaultValue?: string;
+  onChange: (value: string | undefined) => void;
+  placeholder?: string;
+  className?: string;
 }

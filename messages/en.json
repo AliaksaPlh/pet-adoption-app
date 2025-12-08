@@ -63,6 +63,14 @@
     "empty": "No favorite pets yet. Add some pets to your favorites!",
     "petsLinkText": "Go to pets!"
   },
+  "Account": {
+    "title": "welcome!",
+    "info": "Here you can apply for a pet adoption or report a homeless pet.",
+    "info2": "If you have any questions, feel free to contact us via e-mail.",
+    "info3": "We are always happy to help our furry of human friends!",
+    "adoptionButton": "Pet Adoption Application",
+    "petOfferButton": "Report a homeless pet"
+  },
 
   "Toasts": {},
   "HomePage": {
@@ -103,7 +111,74 @@
     "confirmPassword": {
       "required": "Confirm your password",
       "match": "Passwords must match"
+    },
+    "petName": {
+      "required": "Pet name is required"
+    },
+    "petGender": {
+      "required": "Pet gender is required"
+    },
+    "petType": {
+      "required": "Pet type is required"
+    },
+    "petAge": {
+      "required": "Pet age is required"
+    },
+    "petColor": {
+      "required": "Pet color is required"
+    },
+    "furType": {
+      "required": "Fur type is required"
+    },
+    "foundAt": {
+      "required": "Where was the pet was found?"
+    },
+    "phone": {
+      "required": "Phone number is required",
+      "invalid": "Invalid phone number format"
     }
+  },
+  "AdoptionForm": {
+    "title": "Pet Adoption Application",
+    "petName": "Pet Name",
+    "petNamePlaceholder": "Enter pet name",
+    "petGender": "Pet Gender",
+    "petGenderPlaceholder": "Select gender",
+    "petType": "Pet Type",
+    "petTypePlaceholder": "Select type",
+    "applicantName": "Your Name",
+    "applicantNamePlaceholder": "Enter your full name",
+    "phone": "Phone Number",
+    "phonePlaceholder": "Enter your phone number",
+    "submit": "Submit",
+    "submitSuccess": "Your adoption application has been submitted successfully!",
+    "submitError": "Failed to submit application. Please try again later."
+  },
+  "PetOfferForm": {
+    "title": "Pet Offer Form",
+    "petType": "Pet Type",
+    "petTypePlaceholder": "Select type",
+    "petGender": "Pet Gender",
+    "petGenderPlaceholder": "Select gender",
+    "petAge": "Pet Age",
+    "petAgePlaceholder": "e.g., 2 years, 6 months",
+    "petColor": "Pet Color",
+    "petColorPlaceholder": "Enter pet color",
+    "furType": "Fur Type",
+    "furTypePlaceholder": "Select fur type",
+    "medicalNeeds": "Medical Needs",
+    "medicalNeedsPlaceholder": "Describe any medical needs or conditions",
+    "foundAt": "Found Location",
+    "foundAtPlaceholder": "Where was the pet was found?",
+    "notes": "Additional Notes",
+    "notesPlaceholder": "Any additional information about the pet",
+    "applicantName": "Your Name",
+    "applicantNamePlaceholder": "Enter your full name",
+    "phone": "Phone Number",
+    "phonePlaceholder": "Enter your phone number",
+    "submit": "Submit",
+    "submitSuccess": "Application has been submitted successfully!",
+    "submitError": "Failed to submit. Please try again later."
   },
   "ErrorsWarnings": {
     "noAuthToken": "Something went wrong, try again.",

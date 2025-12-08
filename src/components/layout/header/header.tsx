@@ -16,6 +16,7 @@ import type { User } from 'firebase/auth';
 import ThemeButton from '@/components/ui/theme/theme';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/store/store';
+import Image from 'next/image';
 
 export default function Header() {
   const isScrolled = useIsScrolled();
@@ -77,25 +78,86 @@ export default function Header() {
             </ButtonLink>
           )}
           <LanguageSwitcher />
-          <ButtonLink className={styles.navLink} href={ROUTES.HOME}>
-            {t('main')}
-          </ButtonLink>
+
           <ButtonLink
             className={styles.navLink}
             variant={'primary'}
             href={ROUTES.PETS}
+            style={{
+              padding: '8px 12px',
+              display: 'flex',
+              alignItems: 'center',
+              border: 'none',
+              borderRadius: '50%',
+            }}
           >
-            {t('pets')}
+            <Image
+              src="/pet.png"
+              alt={t('pets')}
+              width={24}
+              height={24}
+              className={styles.accountImg}
+            />
           </ButtonLink>
-
+          <ButtonLink
+            className={styles.navLink}
+            href={ROUTES.HOME}
+            style={{
+              padding: '12px 12px',
+              display: 'flex',
+              alignItems: 'center',
+              border: 'none',
+              borderRadius: '50%',
+            }}
+          >
+            <Image
+              src="/home.png"
+              alt={t('main')}
+              width={24}
+              height={24}
+              className={styles.accountImg}
+            />
+          </ButtonLink>
           {user ? (
             <>
+              <ButtonLink
+                className={styles.navLink}
+                href={ROUTES.ACCOUNT}
+                style={{
+                  padding: '12px 12px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  border: 'none',
+                  borderRadius: '50%',
+                }}
+              >
+                <Image
+                  src="/people.png"
+                  alt={t('account')}
+                  width={24}
+                  height={24}
+                  className={styles.accountImg}
+                />
+              </ButtonLink>
               <Button
                 variant={'secondary'}
                 className={styles.navLink}
                 onClick={handleLogOut}
+                style={{
+                  padding: '12px 12px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  border: 'none',
+                  borderRadius: '50%',
+                }}
               >
-                {t('sign-out')}
+                <Image
+                  src="/logout.png"
+                  alt={t('sign-out')}
+                  width={24}
+                  height={24}
+                  className={styles.accountImg}
+                />
               </Button>
             </>
           ) : (
@@ -104,16 +166,15 @@ export default function Header() {
                 className={styles.navLink}
                 variant={'secondary'}
                 href={ROUTES.SIGN_IN}
+                style={{
+                  border: 'none',
+                  display: 'flex',
+                  alignItems: 'center',
+                  boxShadow: '0 2px 10px rgb(0, 0, 0, 10%)',
+                }}
               >
                 {t('sign-in')}
               </ButtonLink>
-              {/* <ButtonLink
-                className={styles.navLink}
-                variant={'secondary'}
-                href={ROUTES.SIGN_UP}
-              >
-                {t('sign-up')}
-              </ButtonLink> */}
             </>
           )}
         </div>
