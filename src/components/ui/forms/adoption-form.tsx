@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl';
 import { adoptionFormSchema, type AdoptionForm } from '@/utils/validation';
 import { FieldInput } from '@/components/ui/field-input/field-input';
 import Button from '@/components/ui/button/button';
-import styles from './adoption-form.module.scss';
+import styles from './form.module.scss';
 import { useLocale } from 'next-intl';
 import { toast } from 'react-toastify';
 import { Select } from '@/components/ui/selector/select';
@@ -63,14 +63,15 @@ export default function AdoptionForm({ onClose }: AdoptionFormProps) {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
       {onClose && (
-        <button
+        <Button
           type="button"
           onClick={onClose}
-          className={styles.closeButton}
           aria-label="Close form"
+          variant="closeButton"
+          style={{ position: 'absolute', top: '10px', right: '10px' }}
         >
           ✕
-        </button>
+        </Button>
       )}
       <h3 className={styles.title}>{t('title')}</h3>
 
@@ -80,6 +81,7 @@ export default function AdoptionForm({ onClose }: AdoptionFormProps) {
           placeholder={t('petNamePlaceholder')}
           {...register('petName')}
           disabled={isSubmitting}
+          variant="form"
         />
         {errors.petName && (
           <p className={styles.error}>{errors.petName.message}</p>
@@ -130,6 +132,7 @@ export default function AdoptionForm({ onClose }: AdoptionFormProps) {
           placeholder={t('applicantNamePlaceholder')}
           {...register('applicantName')}
           disabled={isSubmitting}
+          variant="form"
         />
         {errors.applicantName && (
           <p className={styles.error}>{errors.applicantName.message}</p>
@@ -143,6 +146,7 @@ export default function AdoptionForm({ onClose }: AdoptionFormProps) {
           placeholder={t('phonePlaceholder')}
           {...register('phone')}
           disabled={isSubmitting}
+          variant="form"
         />
         {errors.phone && <p className={styles.error}>{errors.phone.message}</p>}
       </div>

@@ -1,0 +1,90 @@
+@use '@/styles/variables' as v;
+@use '@/styles/mixins' as m;
+
+.wrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.title {
+  color: v.$color-main-green;
+  text-align: center;
+}
+
+.info {
+  font-size: 1.2rem;
+  color: v.$color-main-grey;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @include m.tablet-sm {
+    flex-direction: column;
+    align-items: center;
+  }
+  @include m.tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.formButton {
+  font-size: 1.1rem;
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeInOverlay 0.3s ease forwards;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.modalContent {
+  background: var(--input-bg, v.$color-white);
+  border-radius: v.$borderRadius3;
+  box-shadow: v.$box-shadow;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: fadeInScale 0.3s ease forwards;
+  position: relative;
+  @include m.phone {
+    max-width: 500px;
+  }
+}
+
+@keyframes fadeInOverlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}

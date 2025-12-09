@@ -3,7 +3,7 @@ import { forwardRef, InputHTMLAttributes } from 'react';
 import clsx from 'clsx';
 
 type FieldInputProps = InputHTMLAttributes<HTMLInputElement> & {
-  variant?: 'default' | 'small';
+  variant?: 'default' | 'small' | 'form';
 };
 
 export const FieldInput = forwardRef<HTMLInputElement, FieldInputProps>(
@@ -13,6 +13,7 @@ export const FieldInput = forwardRef<HTMLInputElement, FieldInputProps>(
         ref={ref}
         className={clsx(styles.input, className, {
           [styles.small]: variant === 'small',
+          [styles.form]: variant === 'form',
         })}
         {...props}
       />

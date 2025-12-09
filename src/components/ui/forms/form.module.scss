@@ -1,0 +1,68 @@
+@use '@/styles/variables' as v;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: v.$box-shadow;
+  background-color: var(--input-bg, v.$color-white);
+  position: relative;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: v.$color-main-green;
+  margin-bottom: 0.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: v.$color-dark-grey;
+}
+
+.error {
+  color: v.$color-error;
+  font-size: 0.85rem;
+  margin: 0;
+  min-height: 1.2rem;
+}
+.textarea {
+  padding: 12px 14px;
+  border: 1px solid v.$color-silver;
+  border-radius: v.$borderRadiusInput;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+  background-color: v.$color-white;
+  background: var(--input-bg, v.$color-white);
+  color: v.$color-dark-grey;
+  box-shadow: v.$box-shadow;
+  resize: vertical;
+  min-height: 100px;
+  font-family: inherit;
+
+  &:hover {
+    box-shadow: v.$box-shadow-hover;
+  }
+  &:focus {
+    box-shadow: v.$box-shadow-hover;
+    border-color: v.$color-yellow;
+    outline: none;
+  }
+
+  &:disabled {
+    background: v.$color-silver;
+    cursor: not-allowed;
+  }
+}

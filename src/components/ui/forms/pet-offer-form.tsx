@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl';
 import { petOfferFormSchema, type PetOfferForm } from '@/utils/validation';
 import { FieldInput } from '@/components/ui/field-input/field-input';
 import Button from '@/components/ui/button/button';
-import styles from './pet-offer-form.module.scss';
+import styles from './form.module.scss';
 import { useLocale } from 'next-intl';
 import { toast } from 'react-toastify';
 import { Select } from '@/components/ui/selector/select';
@@ -72,14 +72,15 @@ export default function PetOfferForm({ onClose }: PetOfferFormProps) {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
       {onClose && (
-        <button
+        <Button
           type="button"
           onClick={onClose}
-          className={styles.closeButton}
           aria-label="Close form"
+          variant="closeButton"
+          style={{ position: 'absolute', top: '10px', right: '10px' }}
         >
           ✕
-        </button>
+        </Button>
       )}
       <h3 className={styles.title}>{t('title')}</h3>
 
@@ -127,6 +128,7 @@ export default function PetOfferForm({ onClose }: PetOfferFormProps) {
           placeholder={t('petAgePlaceholder')}
           {...register('petAge')}
           disabled={isSubmitting}
+          variant="form"
         />
         {errors.petAge && (
           <p className={styles.error}>{errors.petAge.message}</p>
@@ -139,6 +141,7 @@ export default function PetOfferForm({ onClose }: PetOfferFormProps) {
           placeholder={t('petColorPlaceholder')}
           {...register('petColor')}
           disabled={isSubmitting}
+          variant="form"
         />
         {errors.petColor && (
           <p className={styles.error}>{errors.petColor.message}</p>
@@ -183,6 +186,7 @@ export default function PetOfferForm({ onClose }: PetOfferFormProps) {
           placeholder={t('foundAtPlaceholder')}
           {...register('foundAt')}
           disabled={isSubmitting}
+          variant="form"
         />
         {errors.foundAt && (
           <p className={styles.error}>{errors.foundAt.message}</p>
@@ -206,6 +210,7 @@ export default function PetOfferForm({ onClose }: PetOfferFormProps) {
           placeholder={t('applicantNamePlaceholder')}
           {...register('applicantName')}
           disabled={isSubmitting}
+          variant="form"
         />
         {errors.applicantName && (
           <p className={styles.error}>{errors.applicantName.message}</p>
@@ -219,6 +224,7 @@ export default function PetOfferForm({ onClose }: PetOfferFormProps) {
           placeholder={t('phonePlaceholder')}
           {...register('phone')}
           disabled={isSubmitting}
+          variant="form"
         />
         {errors.phone && <p className={styles.error}>{errors.phone.message}</p>}
       </div>
