@@ -8,7 +8,6 @@
   border: none;
   box-shadow: v.$box-shadow-hover;
   appearance: none;
-  // background-color: v.$color-main-green-l;
   font-family: inherit;
   position: relative;
   z-index: 1000;
@@ -18,14 +17,9 @@
   &:hover,
   &:active,
   &:focus {
-    box-shadow: v.$box-shadow-green-hover;
+    box-shadow: v.$box-shadow-hover;
   }
   &:disabled {
     box-shadow: none;
-  }
-  @media (hover: hover) and (pointer: fine) {
-    &:hover {
-      box-shadow: v.$box-shadow-hover;
-    }
   }
 }

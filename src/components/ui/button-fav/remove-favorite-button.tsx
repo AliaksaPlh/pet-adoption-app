@@ -26,7 +26,7 @@ const RemoveFavoriteButton: React.FC<RemoveFavoriteButtonProps> = ({
       <Button
         onClick={handleRemove}
         className={className}
-        variant="removeButton"
+        variant="closeButton"
       >
         ✕
       </Button>

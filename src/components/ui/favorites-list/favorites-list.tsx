@@ -44,7 +44,7 @@ const FavoritesList: React.FC = () => {
         {favorites.map((pet) => (
           <li key={pet.id} className={styles.petCardWrapper}>
             <PetCard pet={pet} onClick={() => setSelectedPet(pet)} />
-            <RemoveFavoriteButton pet={pet} className={styles.removeBtn} />
+            <RemoveFavoriteButton pet={pet} />
           </li>
         ))}
       </ul>
